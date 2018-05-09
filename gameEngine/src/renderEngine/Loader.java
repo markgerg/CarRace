@@ -24,12 +24,13 @@ public class Loader {
 	private List<Integer> vbos = new ArrayList<Integer>();
 	private List<Integer> textures = new ArrayList<Integer>();
 
-	public RawModel loadToVAO(float[] positions, float[] textureCoords, int[] indices)
+	public RawModel loadToVAO(float[] positions, float[] textureCoords, float[] normals, int[] indices)
 	{
 		int vaoID = createVAO();
 		bindIndecisBuffer(indices);
 		storeData(0, 3, positions);
 		storeData(1, 2, textureCoords);
+		storeData(2, 3, normals);
 		unbindVAO(); 
 		return new RawModel(vaoID, indices.length);
 	}
@@ -38,7 +39,7 @@ public class Loader {
 	{
 		Texture texture = null;
 		try {
-			texture = TextureLoader.getTexture("PNG", new FileInputStream("res/"+fileName+".jpg"));
+			texture = TextureLoader.getTexture("PNG", new FileInputStream("res/"+fileName+".png"));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
