@@ -12,13 +12,18 @@ import shaders.StaticShader;
 import textures.ModelTexture;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
+import cars.e8Accelerating;
+import cars.e8Steering;
+
+
 
 public class Challenger {
 
 
 	
 	Entity[] eChallenger = new Entity[6];
-	CarKinematics kinematics = new CarKinematics(new Vector3f(0.0f, 0.0f, 0.0f));
+	CarKinematics kinematics = new CarKinematics(new Vector3f(0.0f, 0.0f, 0.0f), 2.9f, 50f);
+
 	
 	public enum Color
 	{
@@ -68,43 +73,77 @@ public class Challenger {
 		// Itt még nem jó a dolog, mert a pozíció nem relatív
 		
 		eChallenger[0].setPosition(kinemtaics.position);
+		eChallenger[0].setRotY(-kinemtaics.heading-90);
 		eChallenger[1].setPosition(kinemtaics.position);
-		Vector3f tirePosition = new Vector3f((kinemtaics.position.x+0.72f), (kinemtaics.position.y+0.33f), (kinemtaics.position.z+1.5f) );
-		eChallenger[2].setPosition(tirePosition);
-		tirePosition = new Vector3f((kinemtaics.position.x-0.72f), (kinemtaics.position.y+0.33f), (kinemtaics.position.z+1.5f) );
-		eChallenger[3].setPosition(tirePosition);
-		eChallenger[3].setRotY(180);
-		tirePosition = new Vector3f((kinemtaics.position.x+0.72f), (kinemtaics.position.y+0.33f), (kinemtaics.position.z-1.4f) );
-		eChallenger[4].setPosition(tirePosition);
-		tirePosition = new Vector3f((kinemtaics.position.x-0.72f), (kinemtaics.position.y+0.33f), (kinemtaics.position.z-1.4f) );
-		eChallenger[5].setPosition(tirePosition);
-		eChallenger[5].setRotY(180);
+		eChallenger[1].setRotY(-kinemtaics.heading-90);
+		Vector3f tirePosition = new Vector3f((kinemtaics.frontWheelLeft.x), (kinemtaics.position.y+0.33f), (kinemtaics.frontWheelLeft.z) );
+		eChallenger[2].setPosition(kinemtaics.frontWheelLeft);
+		eChallenger[2].setRotY(-kinemtaics.frontWheelHeading-90);
+		//tirePosition = new Vector3f((kinemtaics.frontWheel.x-0.72f), (kinemtaics.position.y+0.33f), (kinemtaics.frontWheel.z) );
+		eChallenger[3].setPosition(kinemtaics.frontWheelRight);
+		eChallenger[3].setRotY(-kinemtaics.frontWheelHeading-90);
+		//tirePosition = new Vector3f((kinemtaics.rearWheel.x+0.72f), (kinemtaics.position.y+0.33f), (kinemtaics.rearWheel.z) );
+		eChallenger[4].setPosition(kinemtaics.rearWheelLeft);
+		eChallenger[4].setRotY(-kinemtaics.heading-90);
+		//tirePosition = new Vector3f((kinemtaics.rearWheel.x-0.72f), (kinemtaics.position.y+0.33f), (kinemtaics.rearWheel.z) );
+		eChallenger[5].setPosition(kinemtaics.rearWheelRight);
+		eChallenger[5].setRotY(-kinemtaics.heading-90);
 		
 	}
+	
+
     
     public void moveChallenger(  )
     {
-		eChallenger[2].increaseRotation(8f, 0f, 0f);			// forgatjuk az objektumot
-		eChallenger[3].increaseRotation(8f, 0f, 0f);			// forgatjuk az objektumot
-		eChallenger[4].increaseRotation(8f, 0f, 0f);			// forgatjuk az objektumot
-		eChallenger[5].increaseRotation(8f, 0f, 0f);			// forgatjuk az objektumot
+		for(int i=2; i<6; i++)
+		{
+			eChallenger[i].setSpinningSpeed(0.15f*kinematics.velocity);				// forgatjuk az objektumot
+		}
     	
+
+    	
+		e8Accelerating accelerate;
+		e8Steering steer;
+		
         if(Keyboard.isKeyDown(Keyboard.KEY_UP)){
-    		kinematics.increaseSpeed();
+    		//kinematics.increaseSpeed();
+        	accelerate = e8Accelerating.FORWARD;
         }
         else if(Keyboard.isKeyDown(Keyboard.KEY_DOWN)){
-			kinematics.breakingCar();
+			//kinematics.breakingCar();
+        	accelerate = e8Accelerating.BACKWARD;
+        }
+        else {
+        	accelerate = e8Accelerating.NONE;
+        }
+        if(Keyboard.isKeyDown(Keyboard.KEY_LEFT)){
+			//kinematics.turning(1);
+        	steer = e8Steering.LEFT;
+        }
+        else if(Keyboard.isKeyDown(Keyboard.KEY_RIGHT)){
+			//kinematics.turning(2);
+        	steer = e8Steering.RIGHT;
         }
         else
         {
-        	kinematics.decreaseSpeed();
+        	//kinematics.decreaseSpeed();
+        	steer = e8Steering.NONE;
         }
+
+        
+        
+        kinematics.updateCarLocation(accelerate, steer);
+        
+        kinematics.renderPreProcess();
         
         MoveCar(eChallenger, kinematics);
+        
+        kinematics.calculateFromLocation();
     }
     
 	public void RenderCar(Renderer renderer, StaticShader shader )
 	{
+		//renderer.render(eChallenger[2], shader);
 		for(int i=0; i<6; i++)
 		{
 			renderer.render(eChallenger[i], shader);

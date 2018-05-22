@@ -16,6 +16,10 @@ import renderEngine.Loader;
 import renderEngine.OBJLoader;
 import renderEngine.Renderer;
 import shaders.StaticShader;
+import network.DeLoreanClientStateMachine;
+import network.DeLoreanServerStateMachine;
+import network.DeLoreanServerStateMachine.State;
+import network.Network;
 import textures.ModelTexture;
 
 
@@ -23,6 +27,8 @@ import textures.ModelTexture;
 
 public class MainGameLoop {
 
+	private static Network net = null;
+	
 	public static void RenderCar(Renderer renderer, StaticShader shader, Entity[] eChallenger )
 	{
 		for(int i=0; i<6; i++)
@@ -48,6 +54,19 @@ public class MainGameLoop {
 		Renderer renderer = new Renderer(shader);
 		
 		Challenger redcar = new Challenger(loader);
+
+		String pr = "Próba string jávában";
+		System.out.println("A string mérete:" + pr.getBytes().length);
+		
+//		if (net != null)
+//			net.disconnect();
+//		net = new DeLoreanServerStateMachine(State.DISCONNECTED);
+//		net.connect("localhost");
+		
+		if (net != null)
+			net.disconnect();
+		net = new DeLoreanClientStateMachine();
+		net.connect("localhost");
 
 		/*
 		
@@ -95,7 +114,7 @@ public class MainGameLoop {
 			eChallenger[5].increaseRotation(8f, 0f, 0f);			// forgatjuk az objektumot
 			MoveCar(eChallenger);*/
             //camera.moveWithKeyboardcontrol();							// kamera mozgást bevesszük a billentyűzetről
-            camera.setPosition(new Vector3f(0, 0, 0));									// Az autó mozgatja
+            camera.setPosition(new Vector3f(0, 0, -10));									// Az autó mozgatja
 			renderer.prepare();
 			shader.start();
 			shader.loadLight(light);

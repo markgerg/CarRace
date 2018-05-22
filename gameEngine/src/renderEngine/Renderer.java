@@ -45,7 +45,7 @@ public class Renderer {
         GL20.glEnableVertexAttribArray(1);
         GL20.glEnableVertexAttribArray(2);
         Matrix4f transformationMatrix = Maths.createTransformationMatrix(entity.getPosition(),
-                entity.getRotX(), entity.getRotY(), entity.getRotZ(), entity.getScale());
+                entity.getRotX(), entity.getRotY(), entity.getRotZ(), entity.getScale(), entity.getSpinningSpeed());
         shader.loadTransformationMatrix(transformationMatrix);
         ModelTexture texture = model.getTexture();
         shader.loadShineVariables(texture.getShineDamper(),	texture.getReflectivity());

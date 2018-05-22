@@ -24,9 +24,16 @@ public class SerialClient extends Network {
 					sHeader received = (sHeader) in.readObject();
 					//ctrl.clickReceived(received);
 					System.out.println("Fogadott üzenet generációja:"+(int)received.u8Generation);
-					if((int)received.u8MessageType == 100)
+					if((int)received.u8MessageType == 99)
 					{
-						System.out.println("Fogadott üzenet típusa: DeLorean_MSG_CONN_ACK");
+						System.out.println("Fogadott üzenet típusa: DeLorean_MSG_CONN_REQ");
+						sHeader msg = new sHeader(0, 1, eMsgType.MSG_CONN_ACK);
+						try {
+							out.writeObject(msg);
+							out.flush();
+						} catch (IOException ex) {
+							System.err.println("Send error.");
+						}
 					}
 
 				}

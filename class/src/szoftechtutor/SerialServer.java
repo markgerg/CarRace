@@ -45,8 +45,17 @@ public class SerialServer extends Network {
 
 			try {
 				while (true) {
-					Point received = (Point) in.readObject();
-					ctrl.clickReceived(received);
+					sHeader received = (sHeader) in.readObject();
+					//ctrl.clickReceived(received);
+					long timeNow = System.currentTimeMillis();
+					System.out.println(timeNow);
+					System.out.println("Fogadott üzenet generációja:"+(int)received.u8Generation);
+					if((int)received.u8MessageType == 100)
+					{
+
+						System.out.println("Fogadott üzenet típusa: DeLorean_MSG_CONN_ACK");
+
+					}
 				}
 			} catch (Exception ex) {
 				System.out.println(ex.getMessage());
@@ -72,13 +81,15 @@ public class SerialServer extends Network {
 
 	@Override
 	void send(Point p) {
-		sHeader msg = new sHeader(0, 1, eMsgType.MSG_CONN_ACK);
+		sHeader msg = new sHeader(0, 1, eMsgType.MSG_CONN_REQ);
 		if (out == null)
 			return;
 		System.out.println("Sending point: " + p + " to Client");
 		try {
 			out.writeObject(msg);
 			out.flush();
+			long timeNow = System.currentTimeMillis();
+			System.out.println(timeNow);
 		} catch (IOException ex) {
 			System.err.println("Send error.");
 		}
