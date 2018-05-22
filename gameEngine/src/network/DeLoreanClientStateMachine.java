@@ -94,8 +94,8 @@ public class DeLoreanClientStateMachine extends Network {
 						// Disconnect TODO
 						// Fejezzük be a ciklust
 					}
-					eMsgType msgType = null;
-					msgType.setValue(received.sHeader.u8MessageType);
+
+					eMsgType msgType = eMsgType.fromValue(received.sHeader.u8MessageType);
 					switch (msgType)
 					{
 					case MSG_CONN_REQ:
@@ -143,8 +143,7 @@ public class DeLoreanClientStateMachine extends Network {
 		}
 		
 		// Üzenettípus és rekord ellenőrzés
-		eMsgType msgType = null;
-		msgType.setValue(msg.sHeader.u8MessageType);
+		eMsgType msgType = eMsgType.fromValue(msg.sHeader.u8MessageType);
 		switch (msgType)
 		{
 		case MSG_CONN_ACK:
