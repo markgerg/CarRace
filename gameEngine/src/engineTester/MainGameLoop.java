@@ -58,15 +58,15 @@ public class MainGameLoop {
 		String pr = "Próba string jávában";
 		System.out.println("A string mérete:" + pr.getBytes().length);
 		
-//		if (net != null)
-//			net.disconnect();
-//		net = new DeLoreanServerStateMachine(State.DISCONNECTED);
-//		net.connect("localhost");
-		
 		if (net != null)
 			net.disconnect();
-		net = new DeLoreanClientStateMachine();
-		net.connect("localhost");
+		net = new DeLoreanServerStateMachine(State.DISCONNECTED);
+		net.connect("192.168.1.104");
+		
+//		if (net != null)
+//			net.disconnect();
+//		net = new DeLoreanClientStateMachine();
+//		net.connect("localhost");
 
 		/*
 		

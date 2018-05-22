@@ -12,8 +12,19 @@ public enum eMsgType {
 	MSG_REQ_CONTROL((byte)107),
 	MSG_GAME_OVER((byte)108);
 
-    private byte id;
+    private final byte id;
     eMsgType(byte id) { this.id = id; }
     public byte getValue() { return id; }
-    public void setValue(byte id) { this.id = id; }
+    
+    static eMsgType fromValue(byte id)
+    {
+    	for (eMsgType my: eMsgType.values()) {
+            if (my.id == id) {
+                return my;
+            }
+        }
+		return MSG_DISCONN_REQ;
+
+    }
+    //public void setValue(byte id) { this.id = id; }
 }
