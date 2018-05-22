@@ -13,6 +13,7 @@ import java.util.logging.Logger;
 
 import cars.e8CarColour;
 import cars.e8CarType;
+import common.e8State;
 import engineTester.MainGameLoop;
 
 import track.e8TrackID;
@@ -36,27 +37,50 @@ public class DeLoreanServerStateMachine extends Network {
 	private ObjectOutputStream out = null;
 	private ObjectInputStream in = null;
 	
+	TimerTask queryFirsttime = new TimerTask() {
+		  @Override
+		  public void run() {
+			  State innerState = state;
+			  switch (innerState)
+			  {
+			case DISCONNECTED:
+				sMsgConnReq rec = new sMsgConnReq("Chandler", e8CarType.CHALLENGER, e8CarColour.RED, e8TrackID.TRACK1, e8ConnectionType.FIRSTCONNECTION);
+				System.out.println("Kapcsolódni akar..");
+				send(new sMsg(eMsgType.MSG_CONN_REQ, rec));
+				break;
+			default:
+				//  HIBA!! TODO
+				break;
+			  }
+		  }
+	};
+	
+	TimerTask queryReconn = new TimerTask() {
+		  @Override
+		  public void run() {
+			  State innerState = state;
+			  switch (innerState)
+			  {
+			case DISCONNECTED:
+				sMsgConnReq rec = new sMsgConnReq("Chandler", e8CarType.CHALLENGER, e8CarColour.RED, e8TrackID.TRACK1, e8ConnectionType.RECONNECTION);
+				System.out.println("Újracsatlakozás..");
+				send(new sMsg(eMsgType.MSG_CONN_REQ, rec));
+				break;
+			default:
+				//  HIBA!! TODO
+				break;
+			  }
+		  }
+	};
+	
 	public DeLoreanServerStateMachine(State state) {
 		super();
 		this.state = State.DISCONNECTED;
 		
+
+	
 		// Kapcsolatfelvétel újraküldése
-		timer.scheduleAtFixedRate(new TimerTask() {
-			  @Override
-			  public void run() {
-				  switch (state)
-				  {
-				case DISCONNECTED:
-					sMsgConnReq rec = new sMsgConnReq("Chandler", e8CarType.CHALLENGER, e8CarColour.RED, e8TrackID.TRACK1, e8ConnectionType.FIRSTCONNECTION);
-					System.out.println("Kapcsolódni akar..");
-					send(new sMsg(eMsgType.MSG_CONN_REQ, rec));
-					break;
-				default:
-					//  HIBA!! TODO
-					break;
-				  }
-			  }
-		}, (long)50, (long)50);
+		timer.scheduleAtFixedRate(queryFirsttime, (long)0, (long)20);
 	}
 	
 	private void DeLoreanServerMsg_Conn_Ack()
@@ -65,10 +89,11 @@ public class DeLoreanServerStateMachine extends Network {
 		{
 		case DISCONNECTED:
 			state = State.CONNECTION_IN_PROGRESS;
+			timer.cancel();
 			System.out.println("DeLorean kapcsolódás folyamatban...");
 			break;
 		default:
-			// Disconnect TODO
+			send(new sMsg(eMsgType.MSG_DISCONN_REQ,	 null));
 			break;
 		
 		}
@@ -85,10 +110,16 @@ public class DeLoreanServerStateMachine extends Network {
 			send(new sMsg(eMsgType.MSG_RACE_START, new sMsgRaceStart(5)));
 			break;
 		default:
-			// Disconnect TODO
+			send(new sMsg(eMsgType.MSG_DISCONN_REQ,	 null));
 			break;
 
 		}
+	}
+	
+	private void DeLoreanServerMsg_Disconn_Req()
+	{
+		state = State.DISCONNECTED;
+		timer.schedule(queryReconn, (long)0, (long)5);
 	}
 	
 	private class ReceiverThread implements Runnable {
@@ -102,6 +133,7 @@ public class DeLoreanServerStateMachine extends Network {
 			} catch (IOException e) {
 				System.err.println("A TCP kapcsolat felépítése sikertelen volt.\nA TCP kapcsolatot bontom!");
 				disconnect();
+				
 				return;
 			}
 
@@ -123,8 +155,9 @@ public class DeLoreanServerStateMachine extends Network {
 					boolean msgIsOK = MsgCheck(received);
 					if (!msgIsOK)
 					{
-						// Disconnect TODO
-						// Fejezzük be a ciklust
+						send(new sMsg(eMsgType.MSG_DISCONN_REQ,	 null));		
+						//System.out.println("Az üzenet típusa:"+received.sHeader.u8MessageType);
+						//continue;
 					}
 					eMsgType msgType = eMsgType.fromValue(received.sHeader.u8MessageType);
 					switch (msgType)
@@ -139,14 +172,15 @@ public class DeLoreanServerStateMachine extends Network {
 						//TODO
 						break;
 					case MSG_DISCONN_REQ:
-						//TODO
+						DeLoreanServerMsg_Disconn_Req();
 						break;
 					case MSG_REQ_DATA:
 						//TODO
 						break;
 					default:
+						send(new sMsg(eMsgType.MSG_DISCONN_REQ,	 null));
 						break;
-						// Disconnect TODO			
+								
 					}
 				}
 			} catch (Exception ex) {
@@ -263,7 +297,7 @@ public class DeLoreanServerStateMachine extends Network {
 	@Override
 	public
 	void disconnect() {
-		// TODO Auto-generated method stub
+		state = State.DISCONNECTED;
 		try {
 			if (out != null)
 				out.close();
