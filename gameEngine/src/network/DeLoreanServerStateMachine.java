@@ -11,8 +11,10 @@ import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import cars.e8Accelerating;
 import cars.e8CarColour;
 import cars.e8CarType;
+import cars.e8Steering;
 import common.e8State;
 import engineTester.MainGameLoop;
 
@@ -110,8 +112,8 @@ public class DeLoreanServerStateMachine extends Network {
 	
 	private void DeLoreanServerMsg_Control(sMsgControl msg)
 	{
-		System.out.println(msg.u8Accelerate);
-		System.out.println(msg.u8Steer);
+		System.out.println(e8Accelerating.fromValue(msg.u8Accelerate));
+		System.out.println(e8Steering.fromValue(msg.u8Steer));
 	}
 	
 	private void DeLoreanServerMsg_Conn_Setup(sMsgConnSetup msg)

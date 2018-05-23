@@ -44,7 +44,7 @@ public class DeLoreanClientStateMachine extends Network {
 	TimerTask frameUpdate = new TimerTask() {
 		  @Override
 		  public void run() {
-			System.out.println("Eltelt 40ms idő...");
+			//System.out.println("Eltelt 40ms idő...");
 			// Billentyűk olvasása
 			e8Accelerating accelerate;
 			e8Steering steer;
@@ -76,7 +76,8 @@ public class DeLoreanClientStateMachine extends Network {
 	        
 	        //Üzenet elküldése
 	        send(new sMsg(eMsgType.MSG_CONTROL, new sMsgControl(accelerate, steer)));
-	        
+//			long timeNow = System.currentTimeMillis();
+//			System.out.println(timeNow);
 		  }
 	};
 	

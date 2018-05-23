@@ -8,4 +8,15 @@ public enum e8Steering {
     private final byte id;
 	e8Steering(byte id) { this.id = id; }
     public byte getValue() { return id; }
+    
+    public static e8Steering fromValue(byte id)
+    {
+    	for (e8Steering my: e8Steering.values()) {
+            if (my.id == id) {
+                return my;
+            }
+        }
+		return NONE;
+
+    }
 }
