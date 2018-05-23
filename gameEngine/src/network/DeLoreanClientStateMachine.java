@@ -143,23 +143,23 @@ public class DeLoreanClientStateMachine extends Network {
 		switch(state)
 		{
 		case CONNECTED:
-			clientcar.kinematics.setPosition(msg.si32PositionClient);
-			clientcar.kinematics.setHeading(msg.si32HeadingDegClient);
-			clientcar.kinematics.setFrontWheelHeading(msg.si32FrontWheelHeadingSClient);
-			clientcar.kinematics.setVelocity(msg.si32VelocityClient);
+//			clientcar.kinematics.setPosition(msg.si32PositionClient);
+//			clientcar.kinematics.setHeading(msg.si32HeadingDegClient);
+//			clientcar.kinematics.setFrontWheelHeading(msg.si32FrontWheelHeadingSClient);
+//			clientcar.kinematics.setVelocity(msg.si32VelocityClient);
 			
 			servercar.kinematics.setPosition(msg.si32PositionServer);
 			servercar.kinematics.setHeading(msg.si32HeadingDegServer);
 			servercar.kinematics.setFrontWheelHeading(msg.si32FrontWheelHeadingServer);
 			servercar.kinematics.setVelocity(msg.si32VelocityServer);
 			
-			clientcar.kinematics.renderPreProcess();
+//			clientcar.kinematics.renderPreProcess();
 			servercar.kinematics.renderPreProcess();
 			
-			Challenger.MoveCar(clientcar.eChallenger, clientcar.kinematics);
-			Challenger.MoveCar(servercar.eChallenger, servercar.kinematics);
+//			Challenger.MoveCar(clientcar.eChallenger, clientcar.kinematics);
+			servercar.MoveCarSelf();
 			
-			clientcar.kinematics.calculateFromLocation();
+//			clientcar.kinematics.calculateFromLocation();
 			servercar.kinematics.calculateFromLocation();
 			break;
 		case CONNECTION_IN_PROGRESS:
@@ -180,7 +180,7 @@ public class DeLoreanClientStateMachine extends Network {
 			try {
 				while (true) {
 					sMsg received = (sMsg) in.readObject();
-					System.out.println("Üzenet érkezett  kliens oldalán.");
+					//System.out.println("Üzenet érkezett  kliens oldalán.");
 					//ctrl.clickReceived(received);
 					//long timeNow = System.currentTimeMillis();
 					boolean msgIsOK = MsgCheck(received);
@@ -190,7 +190,7 @@ public class DeLoreanClientStateMachine extends Network {
 					}
 
 					eMsgType msgType = eMsgType.fromValue(received.sHeader.u8MessageType);
-					System.out.println("Az üzenet típusa:"+msgType);
+					//System.out.println("Az üzenet típusa:"+msgType);
 					switch (msgType)
 					{
 					case MSG_CONN_REQ:

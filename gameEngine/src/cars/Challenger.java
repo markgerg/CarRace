@@ -91,6 +91,22 @@ public class Challenger {
 		
 	}
 	
+	public void MoveCarSelf()
+	{
+		this.eChallenger[0].setPosition(this.kinematics.position);
+		this.eChallenger[0].setRotY(-(this.kinematics.heading-90));
+		this.eChallenger[1].setPosition(this.kinematics.position);
+		this.eChallenger[1].setRotY(-(this.kinematics.heading-90));
+		this.eChallenger[2].setPosition(this.kinematics.frontWheelLeft);
+		this.eChallenger[2].setRotY(-(this.kinematics.frontWheelHeading)-90);
+		this.eChallenger[3].setPosition(this.kinematics.frontWheelRight);
+		this.eChallenger[3].setRotY(-(this.kinematics.frontWheelHeading)-90);
+		this.eChallenger[4].setPosition(this.kinematics.rearWheelLeft);
+		this.eChallenger[4].setRotY(-(this.kinematics.heading)-90);
+		this.eChallenger[5].setPosition(this.kinematics.rearWheelRight);
+		this.eChallenger[5].setRotY(-(this.kinematics.heading)-90);
+	}
+	
 
     
     public void moveChallenger(  )
@@ -136,7 +152,7 @@ public class Challenger {
         
         kinematics.renderPreProcess();
         
-        MoveCar(eChallenger, kinematics);
+        MoveCarSelf();
         
         kinematics.calculateFromLocation();
     }
