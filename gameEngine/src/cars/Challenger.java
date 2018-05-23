@@ -21,7 +21,7 @@ public class Challenger {
 
 
 	
-	Entity[] eChallenger = new Entity[6];
+	public Entity[] eChallenger = new Entity[6];
 	public CarKinematics kinematics = new CarKinematics(new Vector3f(0.0f, 0.0f, 0.0f), 2.9f, 50f);
 
 	

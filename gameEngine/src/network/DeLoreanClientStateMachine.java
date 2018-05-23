@@ -152,6 +152,11 @@ public class DeLoreanClientStateMachine extends Network {
 			servercar.kinematics.setHeading(msg.si32HeadingDegServer);
 			servercar.kinematics.setFrontWheelHeading(msg.si32FrontWheelHeadingServer);
 			servercar.kinematics.setVelocity(msg.si32VelocityServer);
+			
+			clientcar.kinematics.renderPreProcess();
+			servercar.kinematics.renderPreProcess();
+			
+			Challenger.MoveCar(clientcar.eChallenger, clientcar.kinematics);
 			break;
 		case CONNECTION_IN_PROGRESS:
 			break;
