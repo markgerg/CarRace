@@ -49,7 +49,7 @@ public class DeLoreanServerStateMachine extends Network {
 				send(new sMsg(eMsgType.MSG_CONN_REQ, rec));
 				break;
 			default:
-				//  HIBA!! TODO
+				Disconnect();
 				break;
 			  }
 		  }
@@ -67,7 +67,7 @@ public class DeLoreanServerStateMachine extends Network {
 				send(new sMsg(eMsgType.MSG_CONN_REQ, rec));
 				break;
 			default:
-				//  HIBA!! TODO
+				Disconnect();
 				break;
 			  }
 		  }
@@ -83,6 +83,13 @@ public class DeLoreanServerStateMachine extends Network {
 		timer.scheduleAtFixedRate(queryFirsttime, (long)0, (long)20);
 	}
 	
+	public void Disconnect()
+	{
+		send(new sMsg(eMsgType.MSG_DISCONN_REQ,	 null));
+		state = State.DISCONNECTED;
+		timer.schedule(queryReconn, (long)0, (long)5);
+	}
+	
 	private void DeLoreanServerMsg_Conn_Ack()
 	{
 		switch(state)
@@ -93,7 +100,7 @@ public class DeLoreanServerStateMachine extends Network {
 			System.out.println("DeLorean kapcsolódás folyamatban...");
 			break;
 		default:
-			send(new sMsg(eMsgType.MSG_DISCONN_REQ,	 null));
+			Disconnect();
 			break;
 		
 		}
@@ -110,7 +117,7 @@ public class DeLoreanServerStateMachine extends Network {
 			send(new sMsg(eMsgType.MSG_RACE_START, new sMsgRaceStart(5)));
 			break;
 		default:
-			send(new sMsg(eMsgType.MSG_DISCONN_REQ,	 null));
+			Disconnect();
 			break;
 
 		}
@@ -133,7 +140,7 @@ public class DeLoreanServerStateMachine extends Network {
 			} catch (IOException e) {
 				System.err.println("A TCP kapcsolat felépítése sikertelen volt.\nA TCP kapcsolatot bontom!");
 				disconnect();
-				
+				connect("localhost");
 				return;
 			}
 
@@ -144,6 +151,7 @@ public class DeLoreanServerStateMachine extends Network {
 			} catch (IOException e) {
 				System.err.println("Hiba történt az adatfolyam érkezése során.\nA TCP kapcsolatot bontom!");
 				disconnect();
+				connect("localhost");
 				return;
 			}
 
@@ -186,6 +194,8 @@ public class DeLoreanServerStateMachine extends Network {
 			} catch (Exception ex) {
 				System.out.println(ex.getMessage());
 				System.err.println("A kliens lecsatlakozott!\nA TCP kapcsolatot bontom!");
+				disconnect();
+				connect("localhost");
 			} finally {
 				disconnect();
 			}
@@ -228,7 +238,7 @@ public class DeLoreanServerStateMachine extends Network {
 			msgTypeIsOK = true;
 			sMsgConnSetup record = (sMsgConnSetup)msg.sRecord;
 			
-			if (msgRecordLength == record.u8NameLength+4)
+			if (msgRecordLength == record.u8NameLength+5)
 			{
 				msgRecLengthIsOK = true;
 			}
@@ -275,6 +285,11 @@ public class DeLoreanServerStateMachine extends Network {
 		if (msgLength == (msgRecordLength+4))
 		{
 			msgLengthIsOK = true;
+		}
+		
+		if (!(msgTypeIsOK && msgLengthIsOK && msgRecLengthIsOK && msgGenIsOK))
+		{
+			System.out.println("Hiba van az üzenetben");
 		}
 		
 		return (msgTypeIsOK && msgLengthIsOK && msgRecLengthIsOK && msgGenIsOK);

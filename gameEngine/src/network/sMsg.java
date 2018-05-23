@@ -21,6 +21,8 @@ public class sMsg implements Serializable {
 		{
 		case MSG_CONN_ACK:
 			this.sRecord = null;
+			this.sHeader.u8Length = 4;
+			this.sHeader.u8RecordLenght = 0;
 			break;
 		case MSG_CONN_REQ:
 			this.sRecord = (sMsgConnReq)record;
