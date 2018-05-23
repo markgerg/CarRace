@@ -96,6 +96,7 @@ public class DeLoreanClientStateMachine extends Network {
 					}
 
 					eMsgType msgType = eMsgType.fromValue(received.sHeader.u8MessageType);
+					System.out.println("Az üzenet típusa:"+msgType);
 					switch (msgType)
 					{
 					case MSG_CONN_REQ:
@@ -215,6 +216,11 @@ public class DeLoreanClientStateMachine extends Network {
 		if (msgLength == (msgRecordLength+4))
 		{
 			msgLengthIsOK = true;
+		}
+		
+		if (!(msgTypeIsOK && msgLengthIsOK && msgRecLengthIsOK && msgGenIsOK))
+		{
+			System.out.println("Hibás üzenet");
 		}
 		
 		return (msgTypeIsOK && msgLengthIsOK && msgRecLengthIsOK && msgGenIsOK);
