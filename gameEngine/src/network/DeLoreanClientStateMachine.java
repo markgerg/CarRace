@@ -26,6 +26,7 @@ public class DeLoreanClientStateMachine extends Network {
 	}
 	
 	private State state;
+	private String ip;
 	Timer timer = new Timer();
 	int DeLoreanGeneration = 1;
 	
@@ -35,8 +36,15 @@ public class DeLoreanClientStateMachine extends Network {
 	
 	
 	
-	public DeLoreanClientStateMachine() {
+	public DeLoreanClientStateMachine(String ip) {
 		super();
+		state = State.DISCONNECTED;
+		this.ip = ip;
+	}
+	
+	public void Disconnect()
+	{
+		send(new sMsg(eMsgType.MSG_DISCONN_REQ,	 null));
 		state = State.DISCONNECTED;
 	}
 
@@ -54,7 +62,7 @@ public class DeLoreanClientStateMachine extends Network {
 			send(new sMsg(eMsgType.MSG_CONN_SETUP, rec));
 			break;
 		default:
-			// Disconnect TODO
+			
 			break;
 		
 		}
@@ -73,6 +81,7 @@ public class DeLoreanClientStateMachine extends Network {
 		case DISCONNECTED:
 			break;
 		default:
+			Disconnect();
 			break;
 
 		}
@@ -91,8 +100,7 @@ public class DeLoreanClientStateMachine extends Network {
 					boolean msgIsOK = MsgCheck(received);
 					if (!msgIsOK)
 					{
-						// Disconnect TODO
-						// Fejezzük be a ciklust
+						Disconnect();
 					}
 
 					eMsgType msgType = eMsgType.fromValue(received.sHeader.u8MessageType);
@@ -114,6 +122,7 @@ public class DeLoreanClientStateMachine extends Network {
 					case MSG_REQ_CONTROL:
 						break;
 					default:
+						Disconnect();
 						break;
 		
 					}
@@ -121,6 +130,8 @@ public class DeLoreanClientStateMachine extends Network {
 			} catch (Exception ex) {
 				System.out.println(ex.getMessage());
 				System.err.println("A Szerver lebomlott!");
+				disconnect();
+				connect(ip);
 			} finally {
 				disconnect();
 			}
@@ -248,6 +259,7 @@ public class DeLoreanClientStateMachine extends Network {
 
 	@Override
 	public void disconnect() {
+		state = State.DISCONNECTED;
 		try {
 			if (out != null)
 				out.close();
