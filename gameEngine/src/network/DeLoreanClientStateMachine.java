@@ -31,6 +31,9 @@ public class DeLoreanClientStateMachine extends Network {
 		CONNECTED
 	}
 	
+	Challenger servercar;
+	Challenger clientcar;
+	
 	private State state;
 	private String ip;
 	Timer timer = new Timer();
@@ -135,6 +138,32 @@ public class DeLoreanClientStateMachine extends Network {
 		}
 	}
 	
+	private void DeLoreanServerMsg_Kinematics_Data(sMsgKinematicsData msg)
+	{
+		switch(state)
+		{
+		case CONNECTED:
+			clientcar.kinematics.setPosition(msg.si32PositionClient);
+			clientcar.kinematics.setHeading(msg.si32HeadingDegClient);
+			clientcar.kinematics.setFrontWheelHeading(msg.si32FrontWheelHeadingSClient);
+			clientcar.kinematics.setVelocity(msg.si32VelocityClient);
+			
+			servercar.kinematics.setPosition(msg.si32PositionServer);
+			servercar.kinematics.setHeading(msg.si32HeadingDegServer);
+			servercar.kinematics.setFrontWheelHeading(msg.si32FrontWheelHeadingServer);
+			servercar.kinematics.setVelocity(msg.si32VelocityServer);
+			break;
+		case CONNECTION_IN_PROGRESS:
+			break;
+		case DISCONNECTED:
+			break;
+		default:
+			Disconnect();
+			break;
+
+		}
+	}
+	
 	private class ReceiverThread implements Runnable {
 
 		public void run() {
@@ -163,7 +192,7 @@ public class DeLoreanClientStateMachine extends Network {
 					case MSG_GAME_OVER:
 						break;
 					case MSG_KINEMATICS_DATA:
-						
+						DeLoreanServerMsg_Kinematics_Data((sMsgKinematicsData)received.sRecord);
 						break;
 					case MSG_RACE_START:
 						DeLoreanServerMsg_Race_Start((sMsgRaceStart)received.sRecord);
@@ -343,7 +372,8 @@ public class DeLoreanClientStateMachine extends Network {
 	@Override
 	public void setCar(Challenger car1, Challenger car2) {
 		// TODO Auto-generated method stub
-		
+		this.servercar = car1;
+		this.clientcar = car2;
 	}
 
 }

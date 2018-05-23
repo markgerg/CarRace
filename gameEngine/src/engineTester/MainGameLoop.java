@@ -29,13 +29,13 @@ public class MainGameLoop {
 
 	private static Network net = null;
 	
-	public static void RenderCar(Renderer renderer, StaticShader shader, Entity[] eChallenger )
-	{
-		for(int i=0; i<6; i++)
-		{
-			renderer.render(eChallenger[i], shader);
-		}
-	}
+//	public static void RenderCar(Renderer renderer, StaticShader shader, Entity[] eChallenger )
+//	{
+//		for(int i=0; i<6; i++)
+//		{
+//			renderer.render(eChallenger[i], shader);
+//		}
+//	}
 	
 	public static void MoveCar(Entity[] eChallenger)
 	{
@@ -124,6 +124,7 @@ public class MainGameLoop {
 			shader.loadViewMatrix(camera);
 			redcar.moveChallenger();
 			redcar.RenderCar(renderer, shader);
+			netcar.RenderCar(renderer, shader);
 			//RenderCar(renderer, shader, eChallenger);
 			shader.stop();
 			DisplayManager.updateDisplay();

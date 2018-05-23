@@ -49,6 +49,22 @@ public class CarKinematics {
 		this.velocity = 0;
 	}
 	
+	public void setPosition(Vector3f position) {
+		this.position = position;
+	}
+
+	public void setHeading(float heading) {
+		this.heading = heading;
+	}
+
+	public void setVelocity(float velocity) {
+		this.velocity = velocity;
+	}
+
+	public void setFrontWheelHeading(float frontWheelHeading) {
+		this.frontWheelHeading = frontWheelHeading;
+	}
+
 	public Vector3f getPosition() {
 		return position;
 	}
