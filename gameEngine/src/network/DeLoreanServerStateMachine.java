@@ -108,6 +108,12 @@ public class DeLoreanServerStateMachine extends Network {
 		}
 	}
 	
+	private void DeLoreanServerMsg_Control(sMsgControl msg)
+	{
+		System.out.println(msg.u8Accelerate);
+		System.out.println(msg.u8Steer);
+	}
+	
 	private void DeLoreanServerMsg_Conn_Setup(sMsgConnSetup msg)
 	{
 		switch(state)
@@ -184,7 +190,7 @@ public class DeLoreanServerStateMachine extends Network {
 						DeLoreanServerMsg_Conn_Setup((sMsgConnSetup)received.sRecord);
 						break;
 					case MSG_CONTROL:
-						//TODO
+						DeLoreanServerMsg_Control((sMsgControl)received.sRecord);
 						break;
 					case MSG_DISCONN_REQ:
 						DeLoreanServerMsg_Disconn_Req();

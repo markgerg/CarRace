@@ -1,9 +1,11 @@
 package network;
 
+import java.io.Serializable;
+
 import cars.e8Accelerating;
 import cars.e8Steering;
 
-public class sMsgControl {
+public class sMsgControl extends sRecord implements Serializable  {
 	byte u8Accelerate;
 	byte u8Steer;
 	

@@ -6,11 +6,16 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Timer;
+import java.util.TimerTask;
 
 import javax.swing.JOptionPane;
 
+import org.lwjgl.input.Keyboard;
+
+import cars.e8Accelerating;
 import cars.e8CarColour;
 import cars.e8CarType;
+import cars.e8Steering;
 import engineTester.MainGameLoop;
 import network.DeLoreanServerStateMachine.State;
 import track.e8TrackID;
@@ -28,12 +33,52 @@ public class DeLoreanClientStateMachine extends Network {
 	private State state;
 	private String ip;
 	Timer timer = new Timer();
+	Timer frameTime = new Timer();
 	int DeLoreanGeneration = 1;
 	
 	private Socket socket = null;
 	private ObjectOutputStream out = null;
 	private ObjectInputStream in = null;
 	
+	
+	TimerTask frameUpdate = new TimerTask() {
+		  @Override
+		  public void run() {
+			System.out.println("Eltelt 40ms idő...");
+			// Billentyűk olvasása
+			e8Accelerating accelerate;
+			e8Steering steer;
+			
+	        if(Keyboard.isKeyDown(Keyboard.KEY_UP)){
+	    		//kinematics.increaseSpeed();
+	        	accelerate = e8Accelerating.FORWARD;
+	        }
+	        else if(Keyboard.isKeyDown(Keyboard.KEY_DOWN)){
+				//kinematics.breakingCar();
+	        	accelerate = e8Accelerating.BACKWARD;
+	        }
+	        else {
+	        	accelerate = e8Accelerating.NONE;
+	        }
+	        if(Keyboard.isKeyDown(Keyboard.KEY_LEFT)){
+				//kinematics.turning(1);
+	        	steer = e8Steering.LEFT;
+	        }
+	        else if(Keyboard.isKeyDown(Keyboard.KEY_RIGHT)){
+				//kinematics.turning(2);
+	        	steer = e8Steering.RIGHT;
+	        }
+	        else
+	        {
+	        	//kinematics.decreaseSpeed();
+	        	steer = e8Steering.NONE;
+	        }
+	        
+	        //Üzenet elküldése
+	        send(new sMsg(eMsgType.MSG_CONTROL, new sMsgControl(accelerate, steer)));
+	        
+		  }
+	};
 	
 	
 	public DeLoreanClientStateMachine(String ip) {
@@ -76,6 +121,7 @@ public class DeLoreanClientStateMachine extends Network {
 			break;
 		case CONNECTION_IN_PROGRESS:
 			state = State.CONNECTED;
+			frameTime.scheduleAtFixedRate(frameUpdate, (long)0, (long)40);
 			System.out.println("A DeLorean szerver kapcsolódott!\n A játék kezdődik: "+(int)msg.u8Countdown+" másodpercen belül!");
 			break;
 		case DISCONNECTED:
