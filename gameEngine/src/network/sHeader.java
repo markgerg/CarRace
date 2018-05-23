@@ -44,8 +44,8 @@ public class sHeader implements Serializable {
 			this.u8Length = (byte)56;
 			break;
 		case MSG_RACE_START:
-			this.u8RecordLenght = (byte)5;
-			this.u8Length = (byte)1;
+			this.u8RecordLenght = (byte)1;
+			this.u8Length = (byte)5;
 			break;
 		case MSG_REQ_CONTROL:
 			this.u8RecordLenght = (byte)0;
