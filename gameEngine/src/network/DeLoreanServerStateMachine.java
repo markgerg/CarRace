@@ -11,6 +11,7 @@ import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import cars.Challenger;
 import cars.e8Accelerating;
 import cars.e8CarColour;
 import cars.e8CarType;
@@ -29,6 +30,9 @@ public class DeLoreanServerStateMachine extends Network {
 		CONNECTION_IN_PROGRESS,
 		CONNECTED
 	}
+	
+	Challenger servercar;
+	Challenger clientcar;
 	
 	private State state;
 	Timer timer = new Timer();
@@ -112,9 +116,15 @@ public class DeLoreanServerStateMachine extends Network {
 	
 	private void DeLoreanServerMsg_Control(sMsgControl msg)
 	{
-		System.out.println(e8Accelerating.fromValue(msg.u8Accelerate));
-		System.out.println(e8Steering.fromValue(msg.u8Steer));
+//		System.out.println(e8Accelerating.fromValue(msg.u8Accelerate));
+//		System.out.println(e8Steering.fromValue(msg.u8Steer));
+		// Feldolgozás
+		sRecord rec = new sMsgKinematicsData(servercar.kinematics.getPosition(), servercar.kinematics.getHeading(), servercar.kinematics.getVelocity(), servercar.kinematics.getFrontWheelHeading(), clientcar.kinematics.getPosition(), clientcar.kinematics.getHeading(), clientcar.kinematics.getVelocity(), clientcar.kinematics.getFrontWheelHeading(), 0);
+		sMsg sendMsg = new sMsg(eMsgType.MSG_KINEMATICS_DATA, rec);
+		send(sendMsg);
 	}
+	
+
 	
 	private void DeLoreanServerMsg_Conn_Setup(sMsgConnSetup msg)
 	{
@@ -309,6 +319,8 @@ public class DeLoreanServerStateMachine extends Network {
 		
 		return (msgTypeIsOK && msgLengthIsOK && msgRecLengthIsOK && msgGenIsOK);
 	}
+	
+
 
 	@Override
 	public
@@ -362,6 +374,12 @@ public class DeLoreanServerStateMachine extends Network {
 		} catch (IOException ex) {
 			System.err.println("A szerver nem tudta elküldeni az üzenetet.");
 		}
+	}
+
+	@Override
+	public void setCar(Challenger car1, Challenger car2) {
+		this.servercar = car1;
+		this.clientcar = car2;
 	}
 	
 }

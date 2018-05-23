@@ -1,8 +1,10 @@
 package network;
 
+import java.io.Serializable;
+
 import org.lwjgl.util.vector.Vector3f;
 
-public class sMsgKinematicsData {
+public class sMsgKinematicsData extends sRecord implements Serializable  {
 	Vector3f si32PositionServer;
 	float si32HeadingDegServer;
 	float si32VelocityServer;

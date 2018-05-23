@@ -12,6 +12,7 @@ import javax.swing.JOptionPane;
 
 import org.lwjgl.input.Keyboard;
 
+import cars.Challenger;
 import cars.e8Accelerating;
 import cars.e8CarColour;
 import cars.e8CarType;
@@ -334,6 +335,14 @@ public class DeLoreanClientStateMachine extends Network {
 		} catch (IOException ex) {
 			System.err.println("Send error.");
 		}
+	}
+
+
+
+	@Override
+	public void setCar(Challenger car1, Challenger car2) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

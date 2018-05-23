@@ -49,6 +49,22 @@ public class CarKinematics {
 		this.velocity = 0;
 	}
 	
+	public Vector3f getPosition() {
+		return position;
+	}
+
+	public float getHeading() {
+		return heading;
+	}
+
+	public float getVelocity() {
+		return velocity;
+	}
+
+	public float getFrontWheelHeading() {
+		return frontWheelHeading;
+	}
+
 	public void calculateFromLocation()
 	{
 		//Első kerekek pozíciójának meghatározása (pozíció + szög)

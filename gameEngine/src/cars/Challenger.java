@@ -22,7 +22,7 @@ public class Challenger {
 
 	
 	Entity[] eChallenger = new Entity[6];
-	CarKinematics kinematics = new CarKinematics(new Vector3f(0.0f, 0.0f, 0.0f), 2.9f, 50f);
+	public CarKinematics kinematics = new CarKinematics(new Vector3f(0.0f, 0.0f, 0.0f), 2.9f, 50f);
 
 	
 	public enum Color

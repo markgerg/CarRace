@@ -54,6 +54,7 @@ public class MainGameLoop {
 		Renderer renderer = new Renderer(shader);
 		
 		Challenger redcar = new Challenger(loader);
+		Challenger netcar = new Challenger(loader);
 
 		String pr = "Próba string jávában";
 		System.out.println("A string mérete:" + pr.getBytes().length);
@@ -67,6 +68,7 @@ public class MainGameLoop {
 			net.disconnect();
 		net = new DeLoreanClientStateMachine("192.168.1.105");
 		net.connect("192.168.1.105");
+		net.setCar(redcar, netcar);
 
 		/*
 		
