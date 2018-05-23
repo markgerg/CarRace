@@ -163,6 +163,7 @@ public class DeLoreanClientStateMachine extends Network {
 					case MSG_GAME_OVER:
 						break;
 					case MSG_KINEMATICS_DATA:
+						
 						break;
 					case MSG_RACE_START:
 						DeLoreanServerMsg_Race_Start((sMsgRaceStart)received.sRecord);
