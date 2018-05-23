@@ -30,6 +30,8 @@ public class DeLoreanServerStateMachine extends Network {
 	
 	private State state;
 	Timer timer = new Timer();
+	Timer timerReconn = new Timer();
+	private e8ConnectionType connType;
 	int DeLoreanGeneration = 1;
 	
 	private ServerSocket serverSocket = null;
@@ -77,7 +79,7 @@ public class DeLoreanServerStateMachine extends Network {
 		super();
 		this.state = State.DISCONNECTED;
 		
-
+		this.connType = e8ConnectionType.FIRSTCONNECTION;
 	
 		// Kapcsolatfelvétel újraküldése
 		timer.scheduleAtFixedRate(queryFirsttime, (long)0, (long)20);
@@ -112,6 +114,7 @@ public class DeLoreanServerStateMachine extends Network {
 		{
 		case CONNECTION_IN_PROGRESS:
 			state = State.CONNECTED;
+			this.connType = e8ConnectionType.RECONNECTION;
 			System.out.println("A kliens kapcsolódott!");
 			System.out.println("A kliens autójának típusa:"+msg.u8carType);
 			send(new sMsg(eMsgType.MSG_RACE_START, new sMsgRaceStart(5)));
@@ -137,6 +140,10 @@ public class DeLoreanServerStateMachine extends Network {
 				System.out.println("Várakzás a kliensre...");
 				clientSocket = serverSocket.accept();
 				System.out.println("A TCP kapcsolat felépült.\nA kliens csatlakozott.");
+				if (connType == e8ConnectionType.RECONNECTION)
+				{
+					timerReconn.scheduleAtFixedRate(queryReconn, (long)0, (long)5);
+				}
 			} catch (IOException e) {
 				System.err.println("A TCP kapcsolat felépítése sikertelen volt.\nA TCP kapcsolatot bontom!");
 				disconnect();
@@ -301,6 +308,7 @@ public class DeLoreanServerStateMachine extends Network {
 		disconnect();
 		try {
 			serverSocket = new ServerSocket(9000);
+
 
 			Thread rec = new Thread(new ReceiverThread());
 			rec.start();
