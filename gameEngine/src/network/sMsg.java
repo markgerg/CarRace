@@ -35,6 +35,9 @@ public class sMsg implements Serializable {
 			this.sHeader.u8Length = (byte) (((sMsgConnSetup)record).u8NameLength+9);
 			break;
 		case MSG_CONTROL:
+			this.sRecord = (sMsgControl)record;
+			this.sHeader.u8Length = 6;
+			this.sHeader.u8RecordLenght = 2;
 			break;
 		case MSG_DISCONN_REQ:
 			this.sRecord = null;
