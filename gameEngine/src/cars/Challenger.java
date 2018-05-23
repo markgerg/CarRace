@@ -94,9 +94,9 @@ public class Challenger {
 	public void MoveCarSelf()
 	{
 		this.eChallenger[0].setPosition(this.kinematics.position);
-		this.eChallenger[0].setRotY(-(this.kinematics.heading-90));
+		this.eChallenger[0].setRotY(-(this.kinematics.heading)-90);
 		this.eChallenger[1].setPosition(this.kinematics.position);
-		this.eChallenger[1].setRotY(-(this.kinematics.heading-90));
+		this.eChallenger[1].setRotY(-(this.kinematics.heading)-90);
 		this.eChallenger[2].setPosition(this.kinematics.frontWheelLeft);
 		this.eChallenger[2].setRotY(-(this.kinematics.frontWheelHeading)-90);
 		this.eChallenger[3].setPosition(this.kinematics.frontWheelRight);
