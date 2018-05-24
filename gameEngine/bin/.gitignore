@@ -1,8 +1,4 @@
+/audio/
 /cars/
-/network/
 /engineTester/
-MainGameLoop.java
-/track/
-/renderEngine/
-DisplayManager.class
-DisplayManager.java
+/gameMaster/

@@ -26,7 +26,7 @@ public class CarKinematics {
 	Vector3f	frontWheelRight = new Vector3f(0.0f, 0.0f, 0.0f);
 	Vector3f 	rearWheelRight = new Vector3f(0.0f, 0.0f, 0.0f);
 	
-	float 		dt = 0.005f;			// Két frissítés között eltelt idő
+	float 		dt = 0.01f;			// Két frissítés között eltelt idő
 
 	public CarKinematics(Vector3f position, float wheelBase, float maxSpeed) {
 		super();
@@ -123,18 +123,18 @@ public class CarKinematics {
 			case FORWARD:{							// Gázadás
 				if (velocity < maxSpeed)
 				{
-					this.velocity += 0.1f;
+					this.velocity += 0.2f;
 				}
 				
-				System.out.println(velocity);
+				//System.out.println(velocity);
 				break;
 			}
 			case BACKWARD:{							// Fékezés
 				if ( 0.0f < this.velocity )
 				{
-					this.velocity -= 0.2f;
+					this.velocity -= 0.4f;
 				}
-				System.out.println("Lassul");
+				//System.out.println("Lassul");
 				break;
 			}
 			case NONE:{								// Gurulás/lassulás
@@ -143,7 +143,7 @@ public class CarKinematics {
 			default:{								// Hiba esetén is lassít kicsi
 				if ( 0.0f < this.velocity )
 				{
-					this.velocity -= 0.05f;
+					this.velocity -= 0.1f;
 				}
 				else
 				{
@@ -159,7 +159,7 @@ public class CarKinematics {
 				if( steerAngle > -15f )
 				{
 					this.steerAngle -= 0.5f;
-					System.out.println("Balra");
+					//System.out.println("Balra");
 				}
 				break;
 			}
@@ -167,7 +167,7 @@ public class CarKinematics {
 				if ( steerAngle < +15f )
 				{
 					this.steerAngle += 0.5f;
-					System.out.println("Jobbra");
+					//System.out.println("Jobbra");
 				}
 				break;
 			}

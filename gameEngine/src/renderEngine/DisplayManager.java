@@ -12,10 +12,11 @@ public class DisplayManager {
 	
 	private static final int WIDTH = 1920;
 	private static final int HEIGHT = 1080;
-	private static final int FPS = 120;
+	private static int FPS = 120;
 
-	public static void createDisplay()
+	public static void createDisplay(int fps)
 	{
+		FPS = fps;
 		System.out.println("Az OpenGL betöltése...");
 		ContextAttribs contextAtrributes = new ContextAttribs(3, 2).withProfileCore(true).withForwardCompatible(true);
 		//attributes.withForwardCompatible(true);

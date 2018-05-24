@@ -153,7 +153,7 @@ public class Challenger {
         
         kinematics.renderPreProcess();
         
-        MoveCar(eChallenger, kinematics);
+        MoveCarSelf();
         
         kinematics.calculateFromLocation();
     }

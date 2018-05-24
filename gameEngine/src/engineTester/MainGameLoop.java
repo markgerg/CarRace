@@ -47,7 +47,7 @@ public class MainGameLoop {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		DisplayManager.createDisplay();
+		DisplayManager.createDisplay(120);
 		
 		Loader loader = new Loader();
 		StaticShader shader = new StaticShader();
@@ -56,8 +56,7 @@ public class MainGameLoop {
 		Challenger redcar = new Challenger(loader);
 		Challenger netcar = new Challenger(loader);
 
-		String pr = "Próba string jávában";
-		System.out.println("A string mérete:" + pr.getBytes().length);
+
 		
 		if (net != null)
 			net.disconnect();
