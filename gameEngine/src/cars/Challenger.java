@@ -92,6 +92,7 @@ public class Challenger {
 	}
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public void MoveCarSelf()
 	{
 		this.eChallenger[0].setPosition(this.kinematics.position);
@@ -108,6 +109,8 @@ public class Challenger {
 		this.eChallenger[5].setRotY(-(this.kinematics.heading)-90);
 	}
 	
+=======
+>>>>>>> parent of 6cfedf0... Statikusság javítás
 =======
 >>>>>>> parent of 6cfedf0... Statikusság javítás
 
