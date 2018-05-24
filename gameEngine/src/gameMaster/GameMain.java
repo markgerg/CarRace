@@ -37,6 +37,9 @@ public class GameMain {
 		Renderer renderer = new Renderer(shader);
         Light light = new Light(new Vector3f(10, 50, 20), new Vector3f(1, 1, 1));
         Camera camera = new Camera();
+        
+		AudioMaster.init();		//main függvényből legyen majd meghívva
+		AudioMaster.setListenerData();
 		
 		Challenger singleCar = new Challenger(loader, e8CarColour.BLUE);
 		

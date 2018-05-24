@@ -199,7 +199,6 @@ public class Challenger {
     
 	public void RenderCar(Renderer renderer, StaticShader shader )
 	{
-		//renderer.render(eChallenger[2], shader);
 		for(int i=0; i<6; i++)
 		{
 			renderer.render(eChallenger[i], shader);
