@@ -24,7 +24,7 @@ public class AudioMaster {
 	}
 	
 	public static void setListenerData () {
-		AL10.alListener3f(AL10.AL_POSITION, 0, 0, 0);
+		
 		AL10.alListener3f(AL10.AL_VELOCITY, 0, 0, 0);
 	}
 	
