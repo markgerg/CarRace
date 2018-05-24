@@ -29,17 +29,6 @@ public class MainGameLoop {
 
 	private static Network net = null;
 	
-	static Loader loader = new Loader();
-	static StaticShader shader = new StaticShader();
-	static Renderer renderer = new Renderer(shader);
-	
-	public static Challenger redcar = new Challenger(loader);
-	public static Challenger netcar = new Challenger(loader);
-	
-    static Light light = new Light(new Vector3f(10, 10, 20), new Vector3f(1, 1, 1));
-    
-    static Camera camera = new Camera();
-	
 //	public static void RenderCar(Renderer renderer, StaticShader shader, Entity[] eChallenger )
 //	{
 //		for(int i=0; i<6; i++)
@@ -60,22 +49,27 @@ public class MainGameLoop {
 		// TODO Auto-generated method stub
 		DisplayManager.createDisplay();
 		
-
+		Loader loader = new Loader();
+		StaticShader shader = new StaticShader();
+		Renderer renderer = new Renderer(shader);
+		
+		Challenger redcar = new Challenger(loader);
+		Challenger netcar = new Challenger(loader);
 
 		String pr = "Próba string jávában";
 		System.out.println("A string mérete:" + pr.getBytes().length);
 		
-//		if (net != null)
-//			net.disconnect();
-//		net = new DeLoreanServerStateMachine(State.DISCONNECTED);
-//		net.connect("192.168.1.104");
-//		net.setCar(redcar, netcar);
-		
 		if (net != null)
 			net.disconnect();
-		net = new DeLoreanClientStateMachine("192.168.1.105");
-		net.connect("192.168.1.105");
+		net = new DeLoreanServerStateMachine(State.DISCONNECTED);
+		net.connect("192.168.1.104");
 		net.setCar(redcar, netcar);
+		
+//		if (net != null)
+//			net.disconnect();
+//		net = new DeLoreanClientStateMachine("192.168.1.105");
+//		net.connect("192.168.1.105");
+//		net.setCar(netcar, redcar);
 
 		/*
 		
@@ -111,7 +105,9 @@ public class MainGameLoop {
         eChallenger[4] = new Entity(car_tire_left_head, new Vector3f(0.72f, 0.33f, -1.4f), 0, 0, 0, 1);
         eChallenger[5] = new Entity(car_tire_left_head, new Vector3f(-0.72f, 0.33f, -1.4f), 0, 180, 0, 1);
         */
-
+        Light light = new Light(new Vector3f(10, 10, 20), new Vector3f(1, 1, 1));
+        
+        Camera camera = new Camera();
 		
 		while(!Display.isCloseRequested())
 		{
@@ -121,37 +117,22 @@ public class MainGameLoop {
 			eChallenger[5].increaseRotation(8f, 0f, 0f);			// forgatjuk az objektumot
 			MoveCar(eChallenger);*/
             //camera.moveWithKeyboardcontrol();							// kamera mozgást bevesszük a billentyűzetről
-//            camera.setPosition(new Vector3f(0, 0, -10));									// Az autó mozgatja
-//			renderer.prepare();
-//			shader.start();
-//			shader.loadLight(light);
-//			shader.loadViewMatrix(camera);
-//			redcar.moveChallenger();
-//			redcar.RenderCar(renderer, shader);
-//			netcar.RenderCar(renderer, shader);
-//			//RenderCar(renderer, shader, eChallenger);
-//			shader.stop();
-//			DisplayManager.updateDisplay();
+            camera.setPosition(new Vector3f(0, 0, -10));									// Az autó mozgatja
+			renderer.prepare();
+			shader.start();
+			shader.loadLight(light);
+			shader.loadViewMatrix(camera);
+			redcar.moveChallenger();
+			redcar.RenderCar(renderer, shader);
+			netcar.RenderCar(renderer, shader);
+			//RenderCar(renderer, shader, eChallenger);
+			shader.stop();
+			DisplayManager.updateDisplay();
 		}
 		shader.cleanUp();
 		loader.cleanUp();
 		
 		DisplayManager.deleteDisplay();
-	}
-	
-	public static void DoProcess()
-	{
-        camera.setPosition(new Vector3f(0, 0, -10));									// Az autó mozgatja
-		renderer.prepare();
-		shader.start();
-		shader.loadLight(light);
-		shader.loadViewMatrix(camera);
-		redcar.moveChallenger();
-		redcar.RenderCar(renderer, shader);
-		netcar.RenderCar(renderer, shader);
-		//RenderCar(renderer, shader, eChallenger);
-		shader.stop();
-		DisplayManager.updateDisplay();
 	}
 
 }

@@ -162,7 +162,7 @@ public class DeLoreanClientStateMachine extends Network {
 			clientcar.kinematics.calculateFromLocation();
 			servercar.kinematics.calculateFromLocation();
 			
-			MainGameLoop.DoProcess();
+		
 			break;
 		case CONNECTION_IN_PROGRESS:
 			break;
