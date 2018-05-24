@@ -6,6 +6,7 @@ import org.lwjgl.opengl.Display;
 import org.lwjgl.util.vector.Vector3f;
 
 import cars.Challenger;
+import cars.e8CarColour;
 import entities.Camera;
 import entities.Entity;
 import entities.Light;
@@ -53,8 +54,8 @@ public class MainGameLoop {
 		StaticShader shader = new StaticShader();
 		Renderer renderer = new Renderer(shader);
 		
-		Challenger redcar = new Challenger(loader);
-		Challenger netcar = new Challenger(loader);
+		Challenger redcar = new Challenger(loader, e8CarColour.BLUE);
+		Challenger netcar = new Challenger(loader, e8CarColour.RED);
 
 
 		

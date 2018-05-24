@@ -20,27 +20,34 @@ import cars.e8Steering;
 
 public class Challenger {
 
-
+	// Az autü fő tulajdonságai (kasztni, fizikai tulajdonságok, hang)
 	
 	public Entity[] eChallenger = new Entity[6];
 	public CarKinematics kinematics = new CarKinematics(new Vector3f(0.0f, 0.0f, 0.0f), 2.9f, 50f);
 	public AudioCar sound = new AudioCar(1, "audio/loop_0.wav");
-	
-
-	
-	public enum Color
-	{
-		RED,
-		BLUE,
-		GREEN
-	}
-	
-	
-    
-    public Challenger( Loader loader ) {
+ 
+    public Challenger(Loader loader, e8CarColour colour) {
 		super();
+	
     	RawModel challengerDry = OBJLoader.loadOBJModel("challenger",	 loader);
-    	TexturedModel challenger = new TexturedModel(challengerDry, new ModelTexture(loader.loadTexture("red")));
+    	TexturedModel challenger = new TexturedModel(challengerDry, new ModelTexture(loader.loadTexture("sapphire")));
+
+    	switch ( colour )
+    	{
+		case BLUE:
+			challenger = new TexturedModel(challengerDry, new ModelTexture(loader.loadTexture("sapphire")));
+			break;
+		case GREEN:
+			break;
+		case RED:
+			challenger = new TexturedModel(challengerDry, new ModelTexture(loader.loadTexture("red")));
+			break;
+		default:
+			challenger = new TexturedModel(challengerDry, new ModelTexture(loader.loadTexture("red")));
+			break;
+    	
+    	}
+    	
     	ModelTexture texture = challenger.getTexture();
     	texture.setShineDamper(10);
     	texture.setReflectivity(1);
@@ -66,36 +73,26 @@ public class Challenger {
         eChallenger[5] = new Entity(car_tire_left_head, new Vector3f(-0.72f, 0.33f, -1.4f), 0, 180, 0, 1);
         
 	}
-
-	public void loadChallenger( Loader loader, Color color )
-    {
-
-    }
 	
+    // Lejárt függvény, nem használjuk. A MoveCarSelf kiindulása
 	public static void MoveCar(Entity[] eChallenger, CarKinematics kinemtaics)
 	{
-		// Itt még nem jó a dolog, mert a pozíció nem relatív
-		
+
 		eChallenger[0].setPosition(kinemtaics.position);
 		eChallenger[0].setRotY(-kinemtaics.heading-90);
 		eChallenger[1].setPosition(kinemtaics.position);
 		eChallenger[1].setRotY(-kinemtaics.heading-90);
-		Vector3f tirePosition = new Vector3f((kinemtaics.frontWheelLeft.x), (kinemtaics.position.y+0.33f), (kinemtaics.frontWheelLeft.z) );
 		eChallenger[2].setPosition(kinemtaics.frontWheelLeft);
 		eChallenger[2].setRotY(-kinemtaics.frontWheelHeading-90);
-		//tirePosition = new Vector3f((kinemtaics.frontWheel.x-0.72f), (kinemtaics.position.y+0.33f), (kinemtaics.frontWheel.z) );
 		eChallenger[3].setPosition(kinemtaics.frontWheelRight);
 		eChallenger[3].setRotY(-kinemtaics.frontWheelHeading-90);
-		//tirePosition = new Vector3f((kinemtaics.rearWheel.x+0.72f), (kinemtaics.position.y+0.33f), (kinemtaics.rearWheel.z) );
 		eChallenger[4].setPosition(kinemtaics.rearWheelLeft);
 		eChallenger[4].setRotY(-kinemtaics.heading-90);
-		//tirePosition = new Vector3f((kinemtaics.rearWheel.x-0.72f), (kinemtaics.position.y+0.33f), (kinemtaics.rearWheel.z) );
 		eChallenger[5].setPosition(kinemtaics.rearWheelRight);
 		eChallenger[5].setRotY(-kinemtaics.heading-90);
 		
 	}
 	
-
 	public void MoveCarSelf()
 	{
 		this.eChallenger[0].setPosition(this.kinematics.position);
@@ -112,8 +109,44 @@ public class Challenger {
 		this.eChallenger[5].setRotY(-(this.kinematics.heading)-90);
 	}
 	
+	public e8Accelerating getAccelerating()
+	{
+		e8Accelerating accelerate;
+		
+        if(Keyboard.isKeyDown(Keyboard.KEY_UP)){
+    		//kinematics.increaseSpeed();
+        	accelerate = e8Accelerating.FORWARD;
+        }
+        else if(Keyboard.isKeyDown(Keyboard.KEY_DOWN)){
+			//kinematics.breakingCar();
+        	accelerate = e8Accelerating.BACKWARD;
+        }
+        else {
+        	accelerate = e8Accelerating.NONE;
+        }
+        return accelerate;
+	}
+	
+	public e8Steering getSteering()
+	{
+		e8Steering steer;
+		
+        if(Keyboard.isKeyDown(Keyboard.KEY_LEFT)){
+			//kinematics.turning(1);
+        	steer = e8Steering.LEFT;
+        }
+        else if(Keyboard.isKeyDown(Keyboard.KEY_RIGHT)){
+			//kinematics.turning(2);
+        	steer = e8Steering.RIGHT;
+        }
+        else
+        {
+        	//kinematics.decreaseSpeed();
+        	steer = e8Steering.NONE;
+        }
+        return steer;
+	}
 
-    
     public void moveChallenger(  )
     {
 		for(int i=2; i<6; i++)

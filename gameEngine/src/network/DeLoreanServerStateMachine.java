@@ -11,6 +11,8 @@ import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import org.lwjgl.util.vector.Vector3f;
+
 import cars.Challenger;
 import cars.e8Accelerating;
 import cars.e8CarColour;
@@ -119,6 +121,16 @@ public class DeLoreanServerStateMachine extends Network {
 //		System.out.println(e8Accelerating.fromValue(msg.u8Accelerate));
 //		System.out.println(e8Steering.fromValue(msg.u8Steer));
 		// Feldolgozás
+		clientcar.kinematics.updateCarLocation(e8Accelerating.fromValue(msg.u8Accelerate), e8Steering.fromValue(msg.u8Steer));
+		
+		clientcar.kinematics.renderPreProcess();
+        
+		clientcar.sound.SetCarParameters(clientcar.kinematics.velocity/7, clientcar.kinematics.position, new Vector3f(0, 0, -10));
+        
+		clientcar.MoveCarSelf();
+        
+		clientcar.kinematics.calculateFromLocation();
+		
 		sRecord rec = new sMsgKinematicsData(servercar.kinematics.getPosition(), servercar.kinematics.getHeading(), servercar.kinematics.getVelocity(), servercar.kinematics.getFrontWheelHeading(), clientcar.kinematics.getPosition(), clientcar.kinematics.getHeading(), clientcar.kinematics.getVelocity(), clientcar.kinematics.getFrontWheelHeading(), 0);
 		sMsg sendMsg = new sMsg(eMsgType.MSG_KINEMATICS_DATA, rec);
 		send(sendMsg);
@@ -380,6 +392,7 @@ public class DeLoreanServerStateMachine extends Network {
 	public void setCar(Challenger car1, Challenger car2) {
 		this.servercar = car1;
 		this.clientcar = car2;
+		this.clientcar.kinematics.dt = 0.03f;
 	}
 	
 }

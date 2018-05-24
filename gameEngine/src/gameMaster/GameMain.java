@@ -8,6 +8,7 @@ import org.lwjgl.util.vector.Vector3f;
 
 import audio.AudioMaster;
 import cars.Challenger;
+import cars.e8CarColour;
 import entities.Camera;
 import entities.Entity;
 import entities.Light;
@@ -37,7 +38,7 @@ public class GameMain {
         Light light = new Light(new Vector3f(10, 50, 20), new Vector3f(1, 1, 1));
         Camera camera = new Camera();
 		
-		Challenger singleCar = new Challenger(loader);
+		Challenger singleCar = new Challenger(loader, e8CarColour.BLUE);
 		
 		RawModel car_tire_left_head_raw = OBJLoader.loadOBJModel("track1",	 loader);
 		TexturedModel car_tire_left_head = new TexturedModel(car_tire_left_head_raw, new ModelTexture(loader.loadTexture("asphalt3")));
@@ -104,28 +105,29 @@ public class GameMain {
         
         Network net = null; 
 		
-		Challenger serverCar = new Challenger(loader);
-		Challenger clientCar = new Challenger(loader);
-		
-//		if (net != null)
-//			net.disconnect();
-//		net = new DeLoreanServerStateMachine(State.DISCONNECTED);
-//		net.connect("192.168.1.104");
-//		net.setCar(serverCar, clientCar);
+		Challenger serverCar = new Challenger(loader, e8CarColour.RED);
+		Challenger clientCar = new Challenger(loader, e8CarColour.BLUE);
 		
 		if (net != null)
 			net.disconnect();
-		net = new DeLoreanClientStateMachine("192.168.1.104");
+		net = new DeLoreanServerStateMachine(State.DISCONNECTED);
 		net.connect("192.168.1.104");
 		net.setCar(serverCar, clientCar);
 		
+//		if (net != null)
+//			net.disconnect();
+//		net = new DeLoreanClientStateMachine("192.168.1.104");
+//		net.connect("192.168.1.104");
+//		net.setCar(serverCar, clientCar);
+//		
 		Timer frameUpdateSeq = new Timer();
 		TimerTask frameUpdate = new TimerTask() {
 
 			@Override
 			public void run() {
 //	            System.out.println("Eltelt 20ms-um.");
-	            
+				serverCar.moveChallenger();
+				
 			}
 			
 		};
@@ -140,7 +142,7 @@ public class GameMain {
 			shader.loadLight(light);
 			shader.loadViewMatrix(camera);
 			
-			
+			clientCar.RenderCar(renderer, shader);
 			serverCar.RenderCar(renderer, shader);
 			
 		
@@ -155,7 +157,7 @@ public class GameMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// Általános tulajdonságok
-		e8GameType gameType = e8GameType.MULTIPLAYER;
+		e8GameType gameType = e8GameType.SINGLEPLAYER;
 		
 		// Választás single player vagy multiplayer között
 		
