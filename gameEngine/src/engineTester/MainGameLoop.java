@@ -75,7 +75,7 @@ public class MainGameLoop {
 			net.disconnect();
 		net = new DeLoreanClientStateMachine("192.168.1.105");
 		net.connect("192.168.1.105");
-		net.setCar(netcar, redcar);
+		net.setCar(redcar, netcar);
 
 		/*
 		
