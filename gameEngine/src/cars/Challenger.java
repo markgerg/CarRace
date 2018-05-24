@@ -2,6 +2,7 @@ package cars;
 
 import org.lwjgl.util.vector.Vector3f;
 
+import audio.AudioCar;
 import entities.Entity;
 import models.RawModel;
 import models.TexturedModel;
@@ -23,6 +24,8 @@ public class Challenger {
 	
 	public Entity[] eChallenger = new Entity[6];
 	public CarKinematics kinematics = new CarKinematics(new Vector3f(0.0f, 0.0f, 0.0f), 2.9f, 50f);
+	public AudioCar sound = new AudioCar(1, "audio/loop_0.wav");
+	
 
 	
 	public enum Color
@@ -61,6 +64,7 @@ public class Challenger {
         eChallenger[3] = new Entity(car_tire_left_head, new Vector3f(-0.72f, 0.33f, 1.5f), 0, 180, 0, 1);
         eChallenger[4] = new Entity(car_tire_left_head, new Vector3f(0.72f, 0.33f, -1.4f), 0, 0, 0, 1);
         eChallenger[5] = new Entity(car_tire_left_head, new Vector3f(-0.72f, 0.33f, -1.4f), 0, 180, 0, 1);
+        
 	}
 
 	public void loadChallenger( Loader loader, Color color )
@@ -152,6 +156,8 @@ public class Challenger {
         kinematics.updateCarLocation(accelerate, steer);
         
         kinematics.renderPreProcess();
+        
+        sound.SetCarParameters(kinematics.velocity/7, kinematics.position, new Vector3f(0, 0, -10));
         
         MoveCarSelf();
         

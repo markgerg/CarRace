@@ -6,6 +6,7 @@ import java.util.TimerTask;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.util.vector.Vector3f;
 
+import audio.AudioMaster;
 import cars.Challenger;
 import entities.Camera;
 import entities.Entity;
@@ -97,6 +98,9 @@ public class GameMain {
 		Renderer renderer = new Renderer(shader);
         Light light = new Light(new Vector3f(10, 50, 20), new Vector3f(1, 1, 1));
         Camera camera = new Camera();
+        
+		AudioMaster.init();		//main függvényből legyen majd meghívva
+		AudioMaster.setListenerData();
         
         Network net = null; 
 		

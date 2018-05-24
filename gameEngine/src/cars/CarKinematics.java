@@ -104,6 +104,27 @@ public class CarKinematics {
 		this.rearWheelRight.z = position.z + wheelBase/2 * Maths.sin(heading) - axleBase * Maths.sin(heading-90);
 	}
 	
+	public void calculateFromLocationWithoutHeading()
+	{
+		//Első kerekek pozíciójának meghatározása (pozíció + szög)
+		this.frontWheelLeft.x = position.x - wheelBase/2 * Maths.cos(heading) + axleBase * Maths.cos(heading+90);
+		this.frontWheelLeft.y = 0.33f;
+		this.frontWheelLeft.z = position.z - wheelBase/2 * Maths.sin(heading) + axleBase * Maths.sin(heading+90);
+		
+		this.frontWheelRight.x = position.x - wheelBase/2 * Maths.cos(heading) + axleBase * Maths.cos(heading-90);
+		this.frontWheelRight.y = 0.33f;
+		this.frontWheelRight.z = position.z - wheelBase/2 * Maths.sin(heading) + axleBase * Maths.sin(heading-90);
+		
+		//Hátsó kerekek pozíciójának meghatározása (csak pozíció)
+		this.rearWheelLeft.x = position.x + wheelBase/2 * Maths.cos(heading) - axleBase * Maths.cos(heading+90);
+		this.rearWheelLeft.y = 0.33f;
+		this.rearWheelLeft.z = position.z + wheelBase/2 * Maths.sin(heading) - axleBase * Maths.sin(heading+90);
+		
+		this.rearWheelRight.x = position.x + wheelBase/2 * Maths.cos(heading) - axleBase * Maths.cos(heading-90);
+		this.rearWheelRight.y = 0.33f;
+		this.rearWheelRight.z = position.z + wheelBase/2 * Maths.sin(heading) - axleBase * Maths.sin(heading-90);
+	}
+	
 	public void renderPreProcess()
 	{
 		position.x = ((frontWheelRight.x + frontWheelLeft.x)/2 + (rearWheelRight.x + rearWheelLeft.x)/2)/2;
