@@ -1,0 +1,3170 @@
+newmtl challanger:CHALLENGER71:Badging_Chrome
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger:CHALLENGER71:Badging_Chrome9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger:CHALLENGER71:Badging_Chrome11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger:CHALLENGER71:Badging_Chrome13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger:CHALLENGER71:Badging_Chrome15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger:CHALLENGER71:Black
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Bottom
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Bottom0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Bottom3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Bottom5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:DoorLine1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:DoorLine8
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Engine0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Engine1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Engine_Chrome
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger:CHALLENGER71:Engine_Chrome0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger:CHALLENGER71:Material__588
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 73.52
+newmtl challanger:CHALLENGER71:Material__594
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 0.28 0.28 0.28
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 34.30
+newmtl challanger:CHALLENGER71:Material__595
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 0.40 0.40 0.40
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 11.31
+newmtl challanger:CHALLENGER71:Material__600
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger:CHALLENGER71:Material__601
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger:CHALLENGER71:Material__602
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger:CHALLENGER71:Material__610
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger:CHALLENGER71:Material__611
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger:CHALLENGER71:Material__6020
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger:CHALLENGER71:Material__6022
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger:CHALLENGER71:Material__6026
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger:CHALLENGER71:Material__6037
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger:CHALLENGER71:Material__6039
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger:CHALLENGER71:Misc
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Misc0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Misc5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Misc7
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Misc9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Misc11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Misc13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Misc15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Misc17
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 8.57
+newmtl challanger:CHALLENGER71:Misc19
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Misc21
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Misc23
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger:CHALLENGER71:Misc_Chrome
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger:CHALLENGER71:Misc_Chrome0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger:CHALLENGER71:Misc_Chrome3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger:CHALLENGER71:Misc_Chrome9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger:CHALLENGER71:Misc_Chrome11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger:CHALLENGER71:Misc_Chrome13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger:CHALLENGER71:Misc_Chrome15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger:CHALLENGER71:Misc_Chrome17
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger:CHALLENGER71:Misc_Chrome19
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger1:CHALLENGER71:Badging_Chrome
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger1:CHALLENGER71:Badging_Chrome9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger1:CHALLENGER71:Badging_Chrome11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger1:CHALLENGER71:Badging_Chrome13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger1:CHALLENGER71:Badging_Chrome15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger1:CHALLENGER71:Black
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Bottom
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Bottom0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Bottom3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Bottom5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:DoorLine1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:DoorLine8
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Engine0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Engine1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Engine_Chrome
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger1:CHALLENGER71:Engine_Chrome0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger1:CHALLENGER71:Material__588
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 73.52
+newmtl challanger1:CHALLENGER71:Material__594
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 0.28 0.28 0.28
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 34.30
+newmtl challanger1:CHALLENGER71:Material__595
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 0.40 0.40 0.40
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 11.31
+newmtl challanger1:CHALLENGER71:Material__600
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger1:CHALLENGER71:Material__601
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger1:CHALLENGER71:Material__602
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger1:CHALLENGER71:Material__610
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger1:CHALLENGER71:Material__611
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger1:CHALLENGER71:Material__6020
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger1:CHALLENGER71:Material__6022
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger1:CHALLENGER71:Material__6026
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger1:CHALLENGER71:Material__6037
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger1:CHALLENGER71:Material__6039
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger1:CHALLENGER71:Misc
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Misc0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Misc5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Misc7
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Misc9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Misc11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Misc13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Misc15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Misc17
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 8.57
+newmtl challanger1:CHALLENGER71:Misc19
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Misc21
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Misc23
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger1:CHALLENGER71:Misc_Chrome
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger1:CHALLENGER71:Misc_Chrome0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger1:CHALLENGER71:Misc_Chrome3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger1:CHALLENGER71:Misc_Chrome9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger1:CHALLENGER71:Misc_Chrome11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger1:CHALLENGER71:Misc_Chrome13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger1:CHALLENGER71:Misc_Chrome15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger1:CHALLENGER71:Misc_Chrome17
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger1:CHALLENGER71:Misc_Chrome19
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger2:CHALLENGER71:Badging_Chrome
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger2:CHALLENGER71:Badging_Chrome9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger2:CHALLENGER71:Badging_Chrome11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger2:CHALLENGER71:Badging_Chrome13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger2:CHALLENGER71:Badging_Chrome15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger2:CHALLENGER71:Black
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Bottom
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Bottom0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Bottom3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Bottom5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:DoorLine1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:DoorLine8
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Engine0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Engine1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Engine_Chrome
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger2:CHALLENGER71:Engine_Chrome0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger2:CHALLENGER71:Material__588
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 73.52
+newmtl challanger2:CHALLENGER71:Material__594
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 0.28 0.28 0.28
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 34.30
+newmtl challanger2:CHALLENGER71:Material__595
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 0.40 0.40 0.40
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 11.31
+newmtl challanger2:CHALLENGER71:Material__600
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger2:CHALLENGER71:Material__601
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger2:CHALLENGER71:Material__602
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger2:CHALLENGER71:Material__610
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger2:CHALLENGER71:Material__611
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger2:CHALLENGER71:Material__6020
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger2:CHALLENGER71:Material__6022
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger2:CHALLENGER71:Material__6026
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger2:CHALLENGER71:Material__6037
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger2:CHALLENGER71:Material__6039
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger2:CHALLENGER71:Misc
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Misc0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Misc5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Misc7
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Misc9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Misc11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Misc13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Misc15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Misc17
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 8.57
+newmtl challanger2:CHALLENGER71:Misc19
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Misc21
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Misc23
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger2:CHALLENGER71:Misc_Chrome
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger2:CHALLENGER71:Misc_Chrome0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger2:CHALLENGER71:Misc_Chrome3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger2:CHALLENGER71:Misc_Chrome9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger2:CHALLENGER71:Misc_Chrome11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger2:CHALLENGER71:Misc_Chrome13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger2:CHALLENGER71:Misc_Chrome15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger2:CHALLENGER71:Misc_Chrome17
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger2:CHALLENGER71:Misc_Chrome19
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger3:CHALLENGER71:Badging_Chrome
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger3:CHALLENGER71:Badging_Chrome9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger3:CHALLENGER71:Badging_Chrome11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger3:CHALLENGER71:Badging_Chrome15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger3:CHALLENGER71:Black
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:Bottom
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:Bottom0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:Bottom3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:Bottom5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:DoorLine1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:DoorLine8
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:Engine0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:Engine1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:Engine_Chrome
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger3:CHALLENGER71:Engine_Chrome0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger3:CHALLENGER71:Material__600
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger3:CHALLENGER71:Material__601
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger3:CHALLENGER71:Material__602
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger3:CHALLENGER71:Material__610
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger3:CHALLENGER71:Material__611
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger3:CHALLENGER71:Material__6020
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger3:CHALLENGER71:Material__6022
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger3:CHALLENGER71:Material__6026
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger3:CHALLENGER71:Material__6037
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger3:CHALLENGER71:Material__6039
+illum 4
+Kd 0.59 0.59 0.59
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 19.70
+newmtl challanger3:CHALLENGER71:Misc
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:Misc0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:Misc5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:Misc11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:Misc13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:Misc15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:Misc17
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 8.57
+newmtl challanger3:CHALLENGER71:Misc19
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:Misc21
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:Misc23
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl challanger3:CHALLENGER71:Misc_Chrome
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger3:CHALLENGER71:Misc_Chrome0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger3:CHALLENGER71:Misc_Chrome3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger3:CHALLENGER71:Misc_Chrome9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger3:CHALLENGER71:Misc_Chrome11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger3:CHALLENGER71:Misc_Chrome13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger3:CHALLENGER71:Misc_Chrome15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger3:CHALLENGER71:Misc_Chrome17
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl challanger3:CHALLENGER71:Misc_Chrome19
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 64.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert2SG
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl pasted__lambert2SG2
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__polySurface1SG6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__polySurface1SG7
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__polySurface1SG6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__polySurface1SG7
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__polySurface1SG10
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__polySurface1SG11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__polySurface1SG12
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__polySurface1SG13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG7
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG10
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG12
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG14
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG16
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG17
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG22
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG23
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG24
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG25
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG26
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG27
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG28
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG29
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG30
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG31
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG32
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG33
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG34
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG35
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG36
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG37
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG38
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__pasted__polySurface1SG39
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__polySurface1SG6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__polySurface1SG7
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__polySurface1SG8
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__polySurface1SG9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__polySurface1SG10
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__polySurface1SG11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__polySurface1SG12
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__polySurface1SG13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__polySurface1SG14
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__polySurface1SG15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__polySurface1SG16
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__polySurface1SG17
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__polySurface1SG22
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__polySurface1SG23
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__polySurface1SG24
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__polySurface1SG25
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__polySurface1SG26
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__polySurface1SG27
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__polySurface1SG28
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__polySurface1SG29
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__polySurface1SG30
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__polySurface1SG31
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__polySurface1SG32
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__polySurface1SG33
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__polySurface1SG38
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__polySurface1SG39
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__polySurface1SG40
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__polySurface1SG41
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__polySurface1SG42
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__polySurface1SG43
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__polySurface1SG44
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__polySurface1SG45
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__pasted__polySurface1SG46
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__pasted__polySurface1SG47
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG7
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG8
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG10
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG12
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG14
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG16
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG17
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG18
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG19
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG20
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG21
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG22
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG23
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG24
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG25
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG26
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG27
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG28
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG29
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG30
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG31
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG32
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG33
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG34
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG35
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG36
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG37
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG38
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG39
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__pasted__polySurface1SG40
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__pasted__polySurface1SG41
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__polySurface1SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__polySurface1SG5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__polySurface1SG6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__polySurface1SG7
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__polySurface1SG8
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__polySurface1SG9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__polySurface1SG10
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__polySurface1SG11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__polySurface1SG12
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__polySurface1SG13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__polySurface1SG14
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__polySurface1SG15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__polySurface1SG16
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__polySurface1SG17
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__polySurface1SG18
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__polySurface1SG19
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__polySurface1SG20
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__polySurface1SG21
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__polySurface1SG22
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__polySurface1SG23
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__polySurface1SG24
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__polySurface1SG25
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__polySurface1SG26
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__polySurface1SG27
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__polySurface1SG28
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__polySurface1SG29
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__polySurface1SG30
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__polySurface1SG31
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__polySurface1SG32
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__polySurface1SG33
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__polySurface1SG34
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__polySurface1SG35
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__pasted__polySurface1SG36
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__pasted__polySurface1SG37
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__polySurface1SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__polySurface1SG5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__polySurface1SG6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__polySurface1SG7
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__polySurface1SG8
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__polySurface1SG9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__polySurface1SG10
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__polySurface1SG11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__polySurface1SG12
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__polySurface1SG13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__polySurface1SG14
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__polySurface1SG15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__polySurface1SG16
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__polySurface1SG17
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl pasted__polySurface1SG18
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl pasted__polySurface1SG19
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
+newmtl polySurface1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bark_0021.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 16.00
+newmtl polySurface1SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DB2X2_L01.png
+bump DB2X2_L01_Nor.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks DB2X2_L01_Spec.png
+Ns 5.89
