@@ -24,6 +24,7 @@ import renderEngine.OBJLoader;
 import renderEngine.Renderer;
 import shaders.StaticShader;
 import textures.ModelTexture;
+import track.Circuit1;
 
 public class GameMain {
 
@@ -41,14 +42,18 @@ public class GameMain {
 		AudioMaster.init();		//main függvényből legyen majd meghívva
 		AudioMaster.setListenerData();
 		
+		// Az autó létrehozása
 		Challenger singleCar = new Challenger(loader, e8CarColour.BLUE);
 		
-		RawModel car_tire_left_head_raw = OBJLoader.loadOBJModel("track1",	 loader);
-		TexturedModel car_tire_left_head = new TexturedModel(car_tire_left_head_raw, new ModelTexture(loader.loadTexture("asphalt3")));
-		ModelTexture texture_tire = car_tire_left_head.getTexture();
-		texture_tire.setShineDamper(5);
-		texture_tire.setReflectivity(1);
-		Entity trackE = new Entity(car_tire_left_head, new Vector3f(0, 0, 0), 0, 0, 0, 1);
+		// A pálya létrehozása
+		Circuit1 circuit = new Circuit1(loader, shader, renderer);
+		
+//		RawModel car_tire_left_head_raw = OBJLoader.loadOBJModel("track1",	 loader);
+//		TexturedModel car_tire_left_head = new TexturedModel(car_tire_left_head_raw, new ModelTexture(loader.loadTexture("asphalt3")));
+//		ModelTexture texture_tire = car_tire_left_head.getTexture();
+//		texture_tire.setShineDamper(5);
+//		texture_tire.setReflectivity(1);
+//		Entity trackE = new Entity(car_tire_left_head, new Vector3f(0, 0, 0), 0, 0, 0, 1);
 		
 		Timer frameUpdateSeq = new Timer();
 		TimerTask frameUpdate = new TimerTask() {
@@ -74,7 +79,8 @@ public class GameMain {
 			
 			
 			singleCar.RenderCar(renderer, shader);
-			renderer.render(trackE, shader);
+			circuit.RenderCircuit();
+//			renderer.render(trackE, shader);
 		
 			DisplayManager.updateDisplay();
 			
