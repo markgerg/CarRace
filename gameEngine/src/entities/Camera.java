@@ -30,10 +30,10 @@ public class Camera {
             position.x-=0.1f;
         }
         
-        if(Keyboard.isKeyDown(Keyboard.KEY_UP)){
+        if(Keyboard.isKeyDown(Keyboard.KEY_1)){
         		position.y+=0.1f;
         }
-        if(Keyboard.isKeyDown(Keyboard.KEY_DOWN)){
+        if(Keyboard.isKeyDown(Keyboard.KEY_2)){
     			position.y-=0.1f;
         }
         float mouseDX = Mouse.getDX() * 0.16f;

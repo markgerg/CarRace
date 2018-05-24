@@ -38,7 +38,7 @@ public class DisplayManager {
 	               }
 	         }
 			
-			Display.setDisplayMode(displayMode);
+			Display.setDisplayMode(new DisplayMode(1920, 1080));
 			Display.setFullscreen(false);
 			Display.create(new PixelFormat(), contextAtrributes);
 			Display.setTitle("Car Race");

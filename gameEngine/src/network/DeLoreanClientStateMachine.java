@@ -7,8 +7,10 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.Semaphore;
 
 import javax.swing.JOptionPane;
+import javax.swing.Renderer;
 
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.util.vector.Vector3f;
@@ -20,6 +22,7 @@ import cars.e8CarType;
 import cars.e8Steering;
 import engineTester.MainGameLoop;
 import network.DeLoreanServerStateMachine.State;
+import shaders.StaticShader;
 import track.e8TrackID;
 
 
@@ -31,6 +34,8 @@ public class DeLoreanClientStateMachine extends Network {
 		CONNECTION_IN_PROGRESS,
 		CONNECTED
 	}
+	
+
 	
 	Challenger servercar;
 	Challenger clientcar;
@@ -45,6 +50,7 @@ public class DeLoreanClientStateMachine extends Network {
 	private ObjectOutputStream out = null;
 	private ObjectInputStream in = null;
 	
+	static Semaphore mutex = new Semaphore(1);
 	
 	TimerTask frameUpdate = new TimerTask() {
 		  @Override
@@ -91,6 +97,7 @@ public class DeLoreanClientStateMachine extends Network {
 		super();
 		state = State.DISCONNECTED;
 		this.ip = ip;
+
 	}
 	
 	public void Disconnect()
@@ -149,20 +156,38 @@ public class DeLoreanClientStateMachine extends Network {
 //			clientcar.kinematics.setFrontWheelHeading(msg.si32FrontWheelHeadingSClient);
 //			clientcar.kinematics.setVelocity(msg.si32VelocityClient);
 			
-			servercar.kinematics.setPosition(new Vector3f(msg.si32PositionServerX, msg.si32PositionServerY, msg.si32PositionServerZ));
-			servercar.kinematics.setHeading(msg.si32HeadingDegServer);
-			servercar.kinematics.setFrontWheelHeading(msg.si32FrontWheelHeadingServer);
-			servercar.kinematics.setVelocity(msg.si32VelocityServer);
+			try {
+				mutex.acquire();
+				try {
+					servercar.kinematics.setPosition(new Vector3f(msg.si32PositionServerX, msg.si32PositionServerY, msg.si32PositionServerZ));
+					servercar.kinematics.setHeading(msg.si32HeadingDegServer);
+					servercar.kinematics.setFrontWheelHeading(msg.si32FrontWheelHeadingServer);
+					servercar.kinematics.setVelocity(msg.si32VelocityServer);
+					
+//					clientcar.kinematics.renderPreProcess();
+
+					
+//					Challenger.MoveCar(clientcar.eChallenger, clientcar.kinematics);
+//					Challenger.MoveCar(servercar.eChallenger, servercar.kinematics);
+					servercar.kinematics.calculateFromLocation();
+					
+					servercar.kinematics.renderPreProcess();
+					
+					servercar.moveChallenger();
+					
+//					clientcar.kinematics.calculateFromLocation();
+
+				} finally {
+					mutex.release();
+				}
+			}
+			catch(InterruptedException ie) {
+				
+			}
 			
-//			clientcar.kinematics.renderPreProcess();
-			servercar.kinematics.renderPreProcess();
+
 			
-//			Challenger.MoveCar(clientcar.eChallenger, clientcar.kinematics);
-//			Challenger.MoveCar(servercar.eChallenger, servercar.kinematics);
-			
-//			clientcar.kinematics.calculateFromLocation();
-//			servercar.kinematics.calculateFromLocation();
-			
+	
 		
 			break;
 		case CONNECTION_IN_PROGRESS:

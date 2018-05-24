@@ -8,14 +8,20 @@ import org.lwjgl.util.vector.Vector3f;
 
 import cars.Challenger;
 import entities.Camera;
+import entities.Entity;
 import entities.Light;
+import models.RawModel;
+import models.TexturedModel;
+import network.DeLoreanClientStateMachine;
 import network.DeLoreanServerStateMachine;
 import network.Network;
 import network.DeLoreanServerStateMachine.State;
 import renderEngine.DisplayManager;
 import renderEngine.Loader;
+import renderEngine.OBJLoader;
 import renderEngine.Renderer;
 import shaders.StaticShader;
+import textures.ModelTexture;
 
 public class GameMain {
 
@@ -32,6 +38,13 @@ public class GameMain {
 		
 		Challenger singleCar = new Challenger(loader);
 		
+		RawModel car_tire_left_head_raw = OBJLoader.loadOBJModel("track1",	 loader);
+		TexturedModel car_tire_left_head = new TexturedModel(car_tire_left_head_raw, new ModelTexture(loader.loadTexture("asphalt3")));
+		ModelTexture texture_tire = car_tire_left_head.getTexture();
+		texture_tire.setShineDamper(5);
+		texture_tire.setReflectivity(1);
+		Entity trackE = new Entity(car_tire_left_head, new Vector3f(0, 0, 0), 0, 0, 0, 1);
+		
 		Timer frameUpdateSeq = new Timer();
 		TimerTask frameUpdate = new TimerTask() {
 
@@ -47,7 +60,8 @@ public class GameMain {
 		
 		while(!Display.isCloseRequested())
 		{
-	        camera.setPosition(new Vector3f(0, 0, -10));									// Az autó mozgatja
+	        camera.setPosition(singleCar.kinematics.getPosition());									// Az autó mozgatja
+//			camera.moveWithKeyboardcontrol();
 			renderer.prepare();
 			shader.start();
 			shader.loadLight(light);
@@ -55,7 +69,7 @@ public class GameMain {
 			
 			
 			singleCar.RenderCar(renderer, shader);
-			
+			renderer.render(trackE, shader);
 		
 			DisplayManager.updateDisplay();
 			
@@ -89,17 +103,17 @@ public class GameMain {
 		Challenger serverCar = new Challenger(loader);
 		Challenger clientCar = new Challenger(loader);
 		
-		if (net != null)
-			net.disconnect();
-		net = new DeLoreanServerStateMachine(State.DISCONNECTED);
-		net.connect("192.168.1.104");
-		net.setCar(serverCar, clientCar);
-		
 //		if (net != null)
 //			net.disconnect();
-//		net = new DeLoreanClientStateMachine("192.168.1.105");
-//		net.connect("192.168.1.105");
+//		net = new DeLoreanServerStateMachine(State.DISCONNECTED);
+//		net.connect("192.168.1.104");
 //		net.setCar(serverCar, clientCar);
+		
+		if (net != null)
+			net.disconnect();
+		net = new DeLoreanClientStateMachine("192.168.1.104");
+		net.connect("192.168.1.104");
+		net.setCar(serverCar, clientCar);
 		
 		Timer frameUpdateSeq = new Timer();
 		TimerTask frameUpdate = new TimerTask() {
@@ -107,7 +121,7 @@ public class GameMain {
 			@Override
 			public void run() {
 //	            System.out.println("Eltelt 20ms-um.");
-	            serverCar.moveChallenger();
+	            
 			}
 			
 		};
