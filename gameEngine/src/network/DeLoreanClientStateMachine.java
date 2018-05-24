@@ -11,6 +11,7 @@ import java.util.TimerTask;
 import javax.swing.JOptionPane;
 
 import org.lwjgl.input.Keyboard;
+import org.lwjgl.util.vector.Vector3f;
 
 import cars.Challenger;
 import cars.e8Accelerating;
@@ -143,24 +144,24 @@ public class DeLoreanClientStateMachine extends Network {
 		switch(state)
 		{
 		case CONNECTED:
-			clientcar.kinematics.setPosition(msg.si32PositionClient);
-			clientcar.kinematics.setHeading(msg.si32HeadingDegClient);
-			clientcar.kinematics.setFrontWheelHeading(msg.si32FrontWheelHeadingSClient);
-			clientcar.kinematics.setVelocity(msg.si32VelocityClient);
+//			clientcar.kinematics.setPosition(new Vector3f(msg.si32PositionClientX, msg.si32PositionClientY, msg.si32PositionClientZ));
+//			clientcar.kinematics.setHeading(msg.si32HeadingDegClient);
+//			clientcar.kinematics.setFrontWheelHeading(msg.si32FrontWheelHeadingSClient);
+//			clientcar.kinematics.setVelocity(msg.si32VelocityClient);
 			
-			servercar.kinematics.setPosition(msg.si32PositionServer);
+			servercar.kinematics.setPosition(new Vector3f(msg.si32PositionServerX, msg.si32PositionServerY, msg.si32PositionServerZ));
 			servercar.kinematics.setHeading(msg.si32HeadingDegServer);
 			servercar.kinematics.setFrontWheelHeading(msg.si32FrontWheelHeadingServer);
 			servercar.kinematics.setVelocity(msg.si32VelocityServer);
 			
-			clientcar.kinematics.renderPreProcess();
+//			clientcar.kinematics.renderPreProcess();
 			servercar.kinematics.renderPreProcess();
 			
-			Challenger.MoveCar(clientcar.eChallenger, clientcar.kinematics);
-			Challenger.MoveCar(servercar.eChallenger, servercar.kinematics);
+//			Challenger.MoveCar(clientcar.eChallenger, clientcar.kinematics);
+//			Challenger.MoveCar(servercar.eChallenger, servercar.kinematics);
 			
-			clientcar.kinematics.calculateFromLocation();
-			servercar.kinematics.calculateFromLocation();
+//			clientcar.kinematics.calculateFromLocation();
+//			servercar.kinematics.calculateFromLocation();
 			
 		
 			break;
