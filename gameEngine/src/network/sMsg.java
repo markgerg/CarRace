@@ -45,6 +45,9 @@ public class sMsg implements Serializable {
 		case MSG_GAME_OVER:
 			break;
 		case MSG_KINEMATICS_DATA:
+			this.sRecord = (sMsgKinematicsData)record;
+			this.sHeader.u8RecordLenght = 52;
+			this.sHeader.u8Length = 56;
 			break;
 		case MSG_RACE_START:
 			this.sRecord = (sMsgRaceStart)record;

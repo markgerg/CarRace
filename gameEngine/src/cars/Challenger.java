@@ -21,7 +21,7 @@ public class Challenger {
 
 
 	
-	Entity[] eChallenger = new Entity[6];
+	public Entity[] eChallenger = new Entity[6];
 	public CarKinematics kinematics = new CarKinematics(new Vector3f(0.0f, 0.0f, 0.0f), 2.9f, 50f);
 
 	
@@ -89,6 +89,23 @@ public class Challenger {
 		eChallenger[5].setPosition(kinemtaics.rearWheelRight);
 		eChallenger[5].setRotY(-kinemtaics.heading-90);
 		
+	}
+	
+
+	public void MoveCarSelf()
+	{
+		this.eChallenger[0].setPosition(this.kinematics.position);
+		this.eChallenger[0].setRotY(-(this.kinematics.heading)-90);
+		this.eChallenger[1].setPosition(this.kinematics.position);
+		this.eChallenger[1].setRotY(-(this.kinematics.heading)-90);
+		this.eChallenger[2].setPosition(this.kinematics.frontWheelLeft);
+		this.eChallenger[2].setRotY(-(this.kinematics.frontWheelHeading)-90);
+		this.eChallenger[3].setPosition(this.kinematics.frontWheelRight);
+		this.eChallenger[3].setRotY(-(this.kinematics.frontWheelHeading)-90);
+		this.eChallenger[4].setPosition(this.kinematics.rearWheelLeft);
+		this.eChallenger[4].setRotY(-(this.kinematics.heading)-90);
+		this.eChallenger[5].setPosition(this.kinematics.rearWheelRight);
+		this.eChallenger[5].setRotY(-(this.kinematics.heading)-90);
 	}
 	
 
