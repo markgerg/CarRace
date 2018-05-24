@@ -9,9 +9,6 @@ import org.lwjgl.util.vector.Vector3f;
 import cars.Challenger;
 import entities.Camera;
 import entities.Light;
-import network.DeLoreanServerStateMachine;
-import network.DeLoreanServerStateMachine.State;
-import network.Network;
 import renderEngine.DisplayManager;
 import renderEngine.Loader;
 import renderEngine.Renderer;
@@ -83,23 +80,10 @@ public class GameMain {
 		Renderer renderer = new Renderer(shader);
         Light light = new Light(new Vector3f(10, 50, 20), new Vector3f(1, 1, 1));
         Camera camera = new Camera();
-        Network net = null;
-
+        
+//        Network 
 		
-		Challenger serverCar = new Challenger(loader);
-		Challenger clientCar = new Challenger(loader);
-		
-		if (net != null)
-			net.disconnect();
-		net = new DeLoreanServerStateMachine(State.DISCONNECTED);
-		net.connect("192.168.1.104");
-		net.setCar(serverCar, clientCar);
-		
-//		if (net != null)
-//			net.disconnect();
-//		net = new DeLoreanClientStateMachine("192.168.1.105");
-//		net.connect("192.168.1.105");
-//		net.setCar(netcar, redcar);
+		Challenger singleCar = new Challenger(loader);
 		
 		Timer frameUpdateSeq = new Timer();
 		TimerTask frameUpdate = new TimerTask() {
@@ -107,7 +91,7 @@ public class GameMain {
 			@Override
 			public void run() {
 //	            System.out.println("Eltelt 20ms-um.");
-	            serverCar.moveChallenger();
+	            singleCar.moveChallenger();
 			}
 			
 		};
@@ -123,7 +107,7 @@ public class GameMain {
 			shader.loadViewMatrix(camera);
 			
 			
-			serverCar.RenderCar(renderer, shader);
+			singleCar.RenderCar(renderer, shader);
 			
 		
 			DisplayManager.updateDisplay();
