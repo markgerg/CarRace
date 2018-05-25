@@ -78,7 +78,7 @@ public class GameMain {
 		
 		while(!Display.isCloseRequested())
 		{
-	        camera.setPosition(singleCar.kinematics.getPosition());									// Az autó mozgatja
+	        camera.setPosition(singleCar.kinematics.getPosition(), singleCar.kinematics.getHeading(), singleCar.kinematics.getFrontWheelHeading());									// Az autó mozgatja
 //			camera.moveWithKeyboardcontrol();
 			renderer.prepare();
 			shader.start();
@@ -170,7 +170,19 @@ public class GameMain {
 		
 		while(!Display.isCloseRequested())
 		{
-	        camera.setPosition(serverCar.kinematics.position);									// Az autó mozgatja
+			switch (socketType)
+			{
+			case CLIENT:
+				camera.setPosition(clientCar.kinematics.position, clientCar.kinematics.getHeading(), clientCar.kinematics.getFrontWheelHeading());
+				break;
+			case SERVER:
+				camera.setPosition(serverCar.kinematics.position, serverCar.kinematics.getHeading(), serverCar.kinematics.getFrontWheelHeading());	
+				break;
+			default:
+				break;
+			
+			}
+	        								// Az autó mozgatja
 			renderer.prepare();
 			shader.start();
 			shader.loadLight(light);

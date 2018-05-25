@@ -3,6 +3,8 @@ package entities;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.util.vector.Vector3f;
+
+import toolbox.Maths;
  
 public class Camera {
      
@@ -56,12 +58,12 @@ public class Camera {
         }
     }
     
-    public void setPosition(Vector3f entityPosition)
+    public void setPosition(Vector3f entityPosition, float carYaw, float frontWheelHeading)
     {
-    	position.x = entityPosition.x;
+    	position.x = entityPosition.x+9*Maths.cos(carYaw+(frontWheelHeading-carYaw));
     	position.y = entityPosition.y+4;
-    	position.z = entityPosition.z-9;
-    	yaw = 180;
+    	position.z = entityPosition.z+9*Maths.sin(carYaw+(frontWheelHeading-carYaw));
+    	yaw = carYaw-90+(frontWheelHeading-carYaw);
     	pitch = 20;
     }
  

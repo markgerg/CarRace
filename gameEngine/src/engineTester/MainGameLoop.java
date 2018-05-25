@@ -117,7 +117,7 @@ public class MainGameLoop {
 			eChallenger[5].increaseRotation(8f, 0f, 0f);			// forgatjuk az objektumot
 			MoveCar(eChallenger);*/
             //camera.moveWithKeyboardcontrol();							// kamera mozgást bevesszük a billentyűzetről
-            camera.setPosition(new Vector3f(0, 0, -10));									// Az autó mozgatja
+            camera.setPosition(new Vector3f(0, 0, -10), 180, 0);									// Az autó mozgatja
 			renderer.prepare();
 			shader.start();
 			shader.loadLight(light);
