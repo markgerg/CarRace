@@ -5,10 +5,13 @@ import java.util.TimerTask;
 
 import org.lwjgl.opengl.Display;
 import org.lwjgl.util.vector.Vector3f;
+import org.newdawn.slick.SlickException;
 
 import audio.AudioMaster;
+import automenu.frame1;
 import cars.Challenger;
 import cars.e8CarColour;
+import common.e8State;
 import entities.Camera;
 import entities.Entity;
 import entities.Light;
@@ -28,7 +31,9 @@ import track.Circuit1;
 
 public class GameMain {
 
-
+	public static boolean gameRunning;
+	public static e8State state;
+	
 	private static void SinglePlayer()
 	{
 		DisplayManager.createDisplay(120);
@@ -38,9 +43,11 @@ public class GameMain {
 		Renderer renderer = new Renderer(shader);
         Light light = new Light(new Vector3f(10, 50, 20), new Vector3f(1, 1, 1));
         Camera camera = new Camera();
-        
+
 		AudioMaster.init();		//main függvényből legyen majd meghívva
 		AudioMaster.setListenerData();
+		
+
 		
 		// Az autó létrehozása
 		Challenger singleCar = new Challenger(loader, e8CarColour.BLUE);
@@ -164,22 +171,37 @@ public class GameMain {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		// Általános tulajdonságok
-		e8GameType gameType = e8GameType.SINGLEPLAYER;
+		// A játékot mindig a menüvel kezdjük
+		state = e8State.MENU;
+		frame1.guiMain();
 		
-		// Választás single player vagy multiplayer között
-		
-		switch ( gameType )
+		while(true)
 		{
-		case SINGLEPLAYER:
-			SinglePlayer();
-			break;
-		case MULTIPLAYER:
-			MultiPlayer();
-			break;
-		default:
-			break;
+			while (state == e8State.MENU)
+			{
+				if (frame1.startGame == true)
+				{
+					state = e8State.GAME;
+					System.out.println("Start!");
+				}
+			}
+			
+			// Általános tulajdonságok
+			e8GameType gameType = e8GameType.SINGLEPLAYER;
+			
+			// Választás single player vagy multiplayer között
+			
+			switch ( gameType )
+			{
+			case SINGLEPLAYER:
+				SinglePlayer();
+				break;
+			case MULTIPLAYER:
+				MultiPlayer();
+				break;
+			default:
+				break;
+			}
 		}
 	}
 }
