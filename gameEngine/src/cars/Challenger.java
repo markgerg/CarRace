@@ -23,11 +23,13 @@ public class Challenger {
 	// Az autü fő tulajdonságai (kasztni, fizikai tulajdonságok, hang)
 	
 	public Entity[] eChallenger = new Entity[6];
-	public CarKinematics kinematics = new CarKinematics(new Vector3f(0.0f, 0.0f, 0.0f), 2.9f, 50f);
+	public CarKinematics kinematics;
 	public AudioCar sound = new AudioCar(1, "audio/loop_0.wav");
  
-    public Challenger(Loader loader, e8CarColour colour) {
+    public Challenger(Loader loader, e8CarColour colour, Vector3f startPosition) {
 		super();
+		
+		kinematics = new CarKinematics(startPosition, 2.9f, 50f);
 	
     	RawModel challengerDry = OBJLoader.loadOBJModel("challenger",	 loader);
     	TexturedModel challenger = new TexturedModel(challengerDry, new ModelTexture(loader.loadTexture("sapphire")));
@@ -64,6 +66,22 @@ public class Challenger {
     	texture_tire.setShineDamper(5);
     	texture_tire.setReflectivity(1);
     	
+    	
+    	switch ( colour )
+    	{
+		case BLUE:
+			kinematics.position = new Vector3f(3, 0, 0);
+			break;
+		case GREEN:
+			break;
+		case RED:
+			kinematics.position = new Vector3f(-3, 0, 0);
+			break;
+		default:
+			
+			break;
+    	
+    	}
         //Entity entity = new Entity(texturedModel, new Vector3f(0,0,-5),0,0,0,10);
         eChallenger[0] = new Entity(challenger, new Vector3f(0, 0, 0), 0, 0, 0, 1);
         eChallenger[1] = new Entity(car_glass, new Vector3f(0, 0, 0), 0, 0, 0, 1);

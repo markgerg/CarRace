@@ -32,7 +32,7 @@ public class CarKinematics {
 		super();
 		// A kasztni pozíciójának meghatározása (pozíció + szög)
 		this.position = position;
-		this.heading = 45;
+		this.heading = -90;
 		this.steerAngle = 0;
 		// Tengelytávolság meghatározása
 		this.wheelBase = wheelBase;

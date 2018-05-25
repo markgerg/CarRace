@@ -54,8 +54,8 @@ public class MainGameLoop {
 		StaticShader shader = new StaticShader();
 		Renderer renderer = new Renderer(shader);
 		
-		Challenger redcar = new Challenger(loader, e8CarColour.BLUE);
-		Challenger netcar = new Challenger(loader, e8CarColour.RED);
+		Challenger redcar = new Challenger(loader, e8CarColour.BLUE, new Vector3f(0, 0, 0));
+		Challenger netcar = new Challenger(loader, e8CarColour.RED, new Vector3f(0, 0, 0));
 
 
 		

@@ -51,7 +51,7 @@ public class GameMain {
 
 		
 		// Az autó létrehozása
-		Challenger singleCar = new Challenger(loader, e8CarColour.BLUE);
+		Challenger singleCar = new Challenger(loader, e8CarColour.BLUE, new Vector3f(0, 0, 0));
 		
 		// A pálya létrehozása
 		Circuit1 circuit = new Circuit1(loader, shader, renderer);
@@ -104,7 +104,7 @@ public class GameMain {
 		DisplayManager.deleteDisplay();
 	}
 	
-	private static void MultiPlayer()
+	private static void MultiPlayer(e8SocketType socketType, String ip)
 	{
 		
 		
@@ -122,20 +122,36 @@ public class GameMain {
         
         Network net = null; 
 		
-		Challenger serverCar = new Challenger(loader, e8CarColour.RED);
-		Challenger clientCar = new Challenger(loader, e8CarColour.BLUE);
+		Challenger serverCar = new Challenger(loader, e8CarColour.RED, new Vector3f(-3, 0, 0));
+		Challenger clientCar = new Challenger(loader, e8CarColour.BLUE, new Vector3f(3, 0, 0));
 		
-		if (net != null)
+		Circuit1 circuit = new Circuit1(loader, shader, renderer);
+		
+		
+		switch (socketType)
+		{
+		case CLIENT:
+			if (net != null)
 			net.disconnect();
-		net = new DeLoreanServerStateMachine(State.DISCONNECTED);
+		net = new DeLoreanClientStateMachine("192.168.1.104");
 		net.connect("192.168.1.104");
 		net.setCar(serverCar, clientCar);
+			break;
+		case SERVER:
+			if (net != null)
+				net.disconnect();
+			net = new DeLoreanServerStateMachine(State.DISCONNECTED);
+			net.connect("192.168.1.104");
+			net.setCar(serverCar, clientCar);
+			break;
+		default:
+			break;
 		
-//		if (net != null)
-//			net.disconnect();
-//		net = new DeLoreanClientStateMachine("192.168.1.104");
-//		net.connect("192.168.1.104");
-//		net.setCar(serverCar, clientCar);
+		}
+		
+
+		
+
 //		
 		Timer frameUpdateSeq = new Timer();
 		TimerTask frameUpdate = new TimerTask() {
@@ -161,6 +177,8 @@ public class GameMain {
 			
 			clientCar.RenderCar(renderer, shader);
 			serverCar.RenderCar(renderer, shader);
+			
+			circuit.RenderCircuit();
 			
 		
 			DisplayManager.updateDisplay();
@@ -208,7 +226,7 @@ public class GameMain {
 				break;
 			case MULTIPLAYER:
 				System.out.println("Multiplayer player indult");
-				MultiPlayer();
+				MultiPlayer(socketType, "192.168.1.105");
 				break;
 			default:
 				break;
