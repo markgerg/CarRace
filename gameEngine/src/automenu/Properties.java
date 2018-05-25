@@ -35,6 +35,7 @@ public class Properties extends JFrame {
 
 	int GameTypeButton;
 	int SocketTypeButton;
+	String text;
 	
 	private JPanel contentPane;
 	private JTextField textFieldPlayer1;
@@ -174,8 +175,10 @@ public class Properties extends JFrame {
 		btnSave.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//adatok elment�se, felhaszn�l�sa
+				text = textField.getText();
 				setVisible(false);
 			}
+
 		});
 		btnSave.setForeground(new Color(102, 0, 102));
 		btnSave.setFont(new Font("Tahoma", Font.BOLD, 42));
@@ -212,6 +215,7 @@ public class Properties extends JFrame {
 		textField.setColumns(10);
 		textField.setBounds(677, 442, 235, 28);
 		contentPane.add(textField);
+		
 		
 		JLabel lblIpAddress = new JLabel("IP address");
 		lblIpAddress.setForeground(Color.WHITE);
@@ -267,7 +271,7 @@ public class Properties extends JFrame {
 	
 	public e8SocketType getSocketType() {
 		e8SocketType sockettype;
-		if (GameTypeButton == 2) {
+		if (SocketTypeButton == 1) {
 			sockettype = e8SocketType.CLIENT;
 			System.out.println("Multiplayer beállítva");
 		}
@@ -278,6 +282,9 @@ public class Properties extends JFrame {
 		return sockettype;
 	}
 	
-	
+	public String getIp()
+	{
+		return text;
+	}
 	
 }

@@ -127,21 +127,22 @@ public class GameMain {
 		
 		Circuit1 circuit = new Circuit1(loader, shader, renderer);
 		
+
 		
 		switch (socketType)
 		{
 		case CLIENT:
 			if (net != null)
 			net.disconnect();
-		net = new DeLoreanClientStateMachine("192.168.1.104");
-		net.connect("192.168.1.104");
+		net = new DeLoreanClientStateMachine(ip);
+		net.connect(ip);
 		net.setCar(serverCar, clientCar);
 			break;
 		case SERVER:
 			if (net != null)
 				net.disconnect();
 			net = new DeLoreanServerStateMachine(State.DISCONNECTED);
-			net.connect("192.168.1.104");
+			net.connect(ip);
 			net.setCar(serverCar, clientCar);
 			break;
 		default:
@@ -169,7 +170,7 @@ public class GameMain {
 		
 		while(!Display.isCloseRequested())
 		{
-	        camera.setPosition(new Vector3f(0, 0, -10));									// Az autó mozgatja
+	        camera.setPosition(serverCar.kinematics.position);									// Az autó mozgatja
 			renderer.prepare();
 			shader.start();
 			shader.loadLight(light);
@@ -212,6 +213,7 @@ public class GameMain {
 			}
 			gameType = frame1.propr.getGameType();
 			socketType = frame1.propr.getSocketType();
+			String ip = frame1.propr.getIp();
 			// Általános tulajdonságok
 			
 			
@@ -225,8 +227,8 @@ public class GameMain {
 				
 				break;
 			case MULTIPLAYER:
-				System.out.println("Multiplayer player indult");
-				MultiPlayer(socketType, "192.168.1.105");
+				System.out.println("Multiplayer player indult, ip:"+ip);
+				MultiPlayer(socketType, ip);
 				break;
 			default:
 				break;
