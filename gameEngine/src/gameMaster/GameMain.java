@@ -11,6 +11,7 @@ import audio.AudioMaster;
 import automenu.frame1;
 import cars.Challenger;
 import cars.e8CarColour;
+import common.e8SocketType;
 import common.e8State;
 import entities.Camera;
 import entities.Entity;
@@ -170,33 +171,43 @@ public class GameMain {
 		}
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// A játékot mindig a menüvel kezdjük
 		state = e8State.MENU;
+		e8GameType gameType = e8GameType.SINGLEPLAYER;
+		e8SocketType socketType = e8SocketType.SERVER;
 		frame1.guiMain();
 		
 		while(true)
 		{
+			Thread.sleep(1);
 			while (state == e8State.MENU)
 			{
+
 				if (frame1.startGame == true)
 				{
 					state = e8State.GAME;
-					System.out.println("Start!");
+
 				}
+				Thread.sleep(1);
+				
 			}
-			
+			gameType = frame1.propr.getGameType();
+			socketType = frame1.propr.getSocketType();
 			// Általános tulajdonságok
-			e8GameType gameType = e8GameType.SINGLEPLAYER;
+			
 			
 			// Választás single player vagy multiplayer között
 			
 			switch ( gameType )
 			{
 			case SINGLEPLAYER:
+				System.out.println("Single player indult");
 				SinglePlayer();
+				
 				break;
 			case MULTIPLAYER:
+				System.out.println("Multiplayer player indult");
 				MultiPlayer();
 				break;
 			default:

@@ -22,6 +22,7 @@ public class frame1 {
 
 	private JFrame frame;
 	public static boolean startGame;
+	public static Properties propr;
 
 	/**
 	 * Launch the application.
@@ -109,7 +110,7 @@ public class frame1 {
 			public void actionPerformed(ActionEvent e) {
 				//frame.dispose();
 				System.out.println("Megnyomták a start gombot");
-				Properties propr = new Properties();
+				propr = new Properties();
 				propr.setVisible(true);
 			}
 		});
@@ -137,7 +138,7 @@ public class frame1 {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Megnyomták a start gombot");
 				startGame = true;
-				
+				frame.dispose();
 			}
 		});
 		btnStart.setForeground(new Color(0, 102, 102));

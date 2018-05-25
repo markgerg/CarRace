@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import cars.e8CarColour;
+import common.e8SocketType;
 import gameMaster.e8GameType;
 import track.e8TrackID;
 
@@ -33,6 +34,7 @@ import javax.swing.Action;
 public class Properties extends JFrame {
 
 	int GameTypeButton;
+	int SocketTypeButton;
 	
 	private JPanel contentPane;
 	private JTextField textFieldPlayer1;
@@ -254,12 +256,26 @@ public class Properties extends JFrame {
 		e8GameType gametype;
 		if (GameTypeButton == 2) {
 			gametype = e8GameType.MULTIPLAYER;
+			System.out.println("Multiplayer beállítva");
 		}
 		else {
 			gametype = e8GameType.SINGLEPLAYER;
 		}
 		
 		return gametype;
+	}
+	
+	public e8SocketType getSocketType() {
+		e8SocketType sockettype;
+		if (GameTypeButton == 2) {
+			sockettype = e8SocketType.CLIENT;
+			System.out.println("Multiplayer beállítva");
+		}
+		else {
+			sockettype = e8SocketType.SERVER;
+		}
+		
+		return sockettype;
 	}
 	
 	
