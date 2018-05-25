@@ -151,14 +151,16 @@ public class DeLoreanClientStateMachine extends Network {
 		switch(state)
 		{
 		case CONNECTED:
-//			clientcar.kinematics.setPosition(new Vector3f(msg.si32PositionClientX, msg.si32PositionClientY, msg.si32PositionClientZ));
-//			clientcar.kinematics.setHeading(msg.si32HeadingDegClient);
-//			clientcar.kinematics.setFrontWheelHeading(msg.si32FrontWheelHeadingSClient);
-//			clientcar.kinematics.setVelocity(msg.si32VelocityClient);
+
 			
 			try {
 				mutex.acquire();
 				try {
+					
+					clientcar.kinematics.setPosition(new Vector3f(msg.si32PositionClientX, msg.si32PositionClientY, msg.si32PositionClientZ));
+					clientcar.kinematics.setHeading(msg.si32HeadingDegClient);
+					clientcar.kinematics.setFrontWheelHeading(msg.si32FrontWheelHeadingSClient);
+					clientcar.kinematics.setVelocity(msg.si32VelocityClient);
 					servercar.kinematics.setPosition(new Vector3f(msg.si32PositionServerX, msg.si32PositionServerY, msg.si32PositionServerZ));
 					servercar.kinematics.setHeading(msg.si32HeadingDegServer);
 					servercar.kinematics.setFrontWheelHeading(msg.si32FrontWheelHeadingServer);
@@ -170,10 +172,13 @@ public class DeLoreanClientStateMachine extends Network {
 //					Challenger.MoveCar(clientcar.eChallenger, clientcar.kinematics);
 //					Challenger.MoveCar(servercar.eChallenger, servercar.kinematics);
 					servercar.kinematics.calculateFromLocation();
+					clientcar.kinematics.calculateFromLocation();
 					
 					servercar.kinematics.renderPreProcess();
+					clientcar.kinematics.renderPreProcess();
 					
 					servercar.moveChallenger();
+					clientcar.moveChallenger();
 					
 //					clientcar.kinematics.calculateFromLocation();
 
