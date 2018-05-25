@@ -193,6 +193,12 @@ public class Properties extends JFrame {
 		contentPane.add(lblNetConnection);
 		
 		JRadioButton rdbtnServer = new JRadioButton("server");
+		rdbtnServer.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SocketTypeButton = 1;
+			}
+		});
+		
 		rdbtnServer.setForeground(Color.WHITE);
 		rdbtnServer.setFont(new Font("Tahoma", Font.PLAIN, 24));
 		rdbtnServer.setBackground(new Color(102, 0, 102));
@@ -200,6 +206,11 @@ public class Properties extends JFrame {
 		contentPane.add(rdbtnServer);
 		
 		JRadioButton rdbtnClient = new JRadioButton("client");
+		rdbtnClient.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SocketTypeButton = 2;
+			}
+		});
 		rdbtnClient.setForeground(Color.WHITE);
 		rdbtnClient.setFont(new Font("Tahoma", Font.PLAIN, 24));
 		rdbtnClient.setBackground(new Color(102, 0, 102));
@@ -271,7 +282,7 @@ public class Properties extends JFrame {
 	
 	public e8SocketType getSocketType() {
 		e8SocketType sockettype;
-		if (SocketTypeButton == 1) {
+		if (SocketTypeButton == 2) {
 			sockettype = e8SocketType.CLIENT;
 			System.out.println("Multiplayer beállítva");
 		}
