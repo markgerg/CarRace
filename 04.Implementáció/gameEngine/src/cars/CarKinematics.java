@@ -185,13 +185,13 @@ public class CarKinematics {
 				
 			}
 			default:{								// Hiba esetén is lassít kicsi
-				if ( steerAngle < 0 )
+				if ( steerAngle < -0.3f )
 				{
-					this.steerAngle += 0.2f;
+					this.steerAngle += 0.3f;
 				}
-				else if( steerAngle > 0 )
+				else if( steerAngle > 0.3f )
 				{
-					this.steerAngle -= 0.2f;
+					this.steerAngle -= 0.3f;
 				}
 				else
 				{

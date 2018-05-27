@@ -29,7 +29,7 @@ public class Challenger {
     public Challenger(Loader loader, e8CarColour colour, Vector3f startPosition) {
 		super();
 		
-		kinematics = new CarKinematics(startPosition, 2.9f, 50f);
+		kinematics = new CarKinematics(startPosition, 2.9f, 90f);
 	
     	RawModel challengerDry = OBJLoader.loadOBJModel("challenger",	 loader);
     	TexturedModel challenger = new TexturedModel(challengerDry, new ModelTexture(loader.loadTexture("sapphire")));
@@ -165,7 +165,7 @@ public class Challenger {
         return steer;
 	}
 
-    public void moveChallenger(  )
+    public void moveChallenger( Vector3f cameraPosition  )
     {
 		for(int i=2; i<6; i++)
 		{
@@ -173,42 +173,13 @@ public class Challenger {
 		}
     	
 
-    	
-		e8Accelerating accelerate;
-		e8Steering steer;
-		
-        if(Keyboard.isKeyDown(Keyboard.KEY_UP)){
-    		//kinematics.increaseSpeed();
-        	accelerate = e8Accelerating.FORWARD;
-        }
-        else if(Keyboard.isKeyDown(Keyboard.KEY_DOWN)){
-			//kinematics.breakingCar();
-        	accelerate = e8Accelerating.BACKWARD;
-        }
-        else {
-        	accelerate = e8Accelerating.NONE;
-        }
-        if(Keyboard.isKeyDown(Keyboard.KEY_LEFT)){
-			//kinematics.turning(1);
-        	steer = e8Steering.LEFT;
-        }
-        else if(Keyboard.isKeyDown(Keyboard.KEY_RIGHT)){
-			//kinematics.turning(2);
-        	steer = e8Steering.RIGHT;
-        }
-        else
-        {
-        	//kinematics.decreaseSpeed();
-        	steer = e8Steering.NONE;
-        }
-
         
         
-        kinematics.updateCarLocation(accelerate, steer);
+        kinematics.updateCarLocation(getAccelerating(), getSteering());
         
         kinematics.renderPreProcess();
         
-        sound.SetCarParameters(kinematics.velocity/7, kinematics.position, new Vector3f(0, 0, -10));
+        sound.SetCarParameters(kinematics.velocity/7+3, kinematics.position, cameraPosition);
         
         MoveCarSelf();
         

@@ -21,6 +21,7 @@ import cars.e8CarColour;
 import cars.e8CarType;
 import cars.e8Steering;
 import engineTester.MainGameLoop;
+import entities.Camera;
 import network.DeLoreanServerStateMachine.State;
 import shaders.StaticShader;
 import track.e8TrackID;
@@ -39,6 +40,8 @@ public class DeLoreanClientStateMachine extends Network {
 	
 	Challenger servercar;
 	Challenger clientcar;
+	
+	Camera camera;
 	
 	private State state;
 	private String ip;
@@ -93,10 +96,11 @@ public class DeLoreanClientStateMachine extends Network {
 	};
 	
 	
-	public DeLoreanClientStateMachine(String ip) {
+	public DeLoreanClientStateMachine(String ip, Camera camera) {
 		super();
 		state = State.DISCONNECTED;
 		this.ip = ip;
+		this.camera = camera;
 
 	}
 	
@@ -177,8 +181,8 @@ public class DeLoreanClientStateMachine extends Network {
 					servercar.kinematics.renderPreProcess();
 					clientcar.kinematics.renderPreProcess();
 					
-					servercar.moveChallenger();
-					clientcar.moveChallenger();
+					servercar.moveChallenger(camera.getPosition());
+					clientcar.moveChallenger(camera.getPosition());
 					
 //					clientcar.kinematics.calculateFromLocation();
 

@@ -122,7 +122,7 @@ public class MainGameLoop {
 			shader.start();
 			shader.loadLight(light);
 			shader.loadViewMatrix(camera);
-			redcar.moveChallenger();
+			redcar.moveChallenger(camera.getPosition());
 			redcar.RenderCar(renderer, shader);
 			netcar.RenderCar(renderer, shader);
 			//RenderCar(renderer, shader, eChallenger);

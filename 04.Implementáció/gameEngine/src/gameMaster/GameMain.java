@@ -37,7 +37,7 @@ public class GameMain {
 	
 	private static void SinglePlayer()
 	{
-		DisplayManager.createDisplay(120);
+		DisplayManager.createDisplay(60);
 		
 		Loader loader = new Loader();
 		StaticShader shader = new StaticShader();
@@ -69,7 +69,7 @@ public class GameMain {
 			@Override
 			public void run() {
 //	            System.out.println("Eltelt 20ms-um.");
-	            singleCar.moveChallenger();
+
 			}
 			
 		};
@@ -85,6 +85,7 @@ public class GameMain {
 			shader.loadLight(light);
 			shader.loadViewMatrix(camera);
 			
+            singleCar.moveChallenger(camera.getPosition());
 			
 			singleCar.RenderCar(renderer, shader);
 			circuit.RenderCircuit();
@@ -134,7 +135,7 @@ public class GameMain {
 		case CLIENT:
 			if (net != null)
 			net.disconnect();
-		net = new DeLoreanClientStateMachine(ip);
+		net = new DeLoreanClientStateMachine(ip, camera);
 		net.connect(ip);
 		net.setCar(serverCar, clientCar);
 			break;
@@ -160,7 +161,7 @@ public class GameMain {
 			@Override
 			public void run() {
 //	            System.out.println("Eltelt 20ms-um.");
-				serverCar.moveChallenger();
+				serverCar.moveChallenger(camera.getPosition());
 				
 			}
 			
