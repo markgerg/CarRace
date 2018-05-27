@@ -1,0 +1,15 @@
+/.DS_Store
+/audio/
+/cars/
+/common/
+/engineTester/
+/entities/
+/gameMaster/
+/models/
+/network/
+/renderEngine/
+/shaders/
+/textures/
+/toolbox/
+/track/
+/automenu/
