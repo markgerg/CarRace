@@ -55,27 +55,8 @@ public class GameMain {
 		
 		// A pálya létrehozása
 		Circuit1 circuit = new Circuit1(loader, shader, renderer);
-		
-//		RawModel car_tire_left_head_raw = OBJLoader.loadOBJModel("track1",	 loader);
-//		TexturedModel car_tire_left_head = new TexturedModel(car_tire_left_head_raw, new ModelTexture(loader.loadTexture("asphalt3")));
-//		ModelTexture texture_tire = car_tire_left_head.getTexture();
-//		texture_tire.setShineDamper(5);
-//		texture_tire.setReflectivity(1);
-//		Entity trackE = new Entity(car_tire_left_head, new Vector3f(0, 0, 0), 0, 0, 0, 1);
-		
-		Timer frameUpdateSeq = new Timer();
-		TimerTask frameUpdate = new TimerTask() {
 
-			@Override
-			public void run() {
-//	            System.out.println("Eltelt 20ms-um.");
-
-			}
-			
-		};
-		
-		frameUpdateSeq.scheduleAtFixedRate(frameUpdate, (long)3, (long)20);
-		
+		// A főciklus
 		while(!Display.isCloseRequested())
 		{
 	        camera.setPosition(singleCar.kinematics.getPosition(), singleCar.kinematics.getHeading(), singleCar.kinematics.getFrontWheelHeading());									// Az autó mozgatja
@@ -89,7 +70,6 @@ public class GameMain {
 			
 			singleCar.RenderCar(renderer, shader);
 			circuit.RenderCircuit();
-//			renderer.render(trackE, shader);
 		
 			DisplayManager.updateDisplay();
 			
@@ -99,9 +79,10 @@ public class GameMain {
 		}
 		
 		// A vége, felszabadítások
+		singleCar.delete();
 		shader.cleanUp();
 		loader.cleanUp();
-		
+		AudioMaster.cleanUp();
 		DisplayManager.deleteDisplay();
 	}
 	
@@ -167,7 +148,7 @@ public class GameMain {
 			
 		};
 		
-		frameUpdateSeq.scheduleAtFixedRate(frameUpdate, (long)3, (long)20);
+		//frameUpdateSeq.scheduleAtFixedRate(frameUpdate, (long)3, (long)20);
 		
 		while(!Display.isCloseRequested())
 		{
@@ -208,10 +189,12 @@ public class GameMain {
 		state = e8State.MENU;
 		e8GameType gameType = e8GameType.SINGLEPLAYER;
 		e8SocketType socketType = e8SocketType.SERVER;
-		frame1.guiMain();
+		String ip = "localhost";
+
 		
 		while(true)
 		{
+			frame1.guiMain();
 			Thread.sleep(1);
 			while (state == e8State.MENU)
 			{
@@ -224,11 +207,22 @@ public class GameMain {
 				Thread.sleep(1);
 				
 			}
-			gameType = frame1.propr.getGameType();
-			socketType = frame1.propr.getSocketType();
-			String ip = frame1.propr.getIp();
+			frame1.startGame = false;
+			try 
+			{
+				gameType = frame1.propr.getGameType();
+				socketType = frame1.propr.getSocketType();
+				ip = frame1.propr.getIp();
+			} 
+			catch (NullPointerException e)
+			{
+				gameType = e8GameType.SINGLEPLAYER;
+			}
+			
+
 			// Általános tulajdonságok
 			
+		
 			
 			// Választás single player vagy multiplayer között
 			
@@ -246,6 +240,7 @@ public class GameMain {
 			default:
 				break;
 			}
+			state = e8State.MENU;
 		}
 	}
 }

@@ -37,7 +37,6 @@ public class AudioCar {
 	
 	public void deleteAudioCar() {
 		source.delete();
-		AudioMaster.cleanUp();
 	}
 	
 	

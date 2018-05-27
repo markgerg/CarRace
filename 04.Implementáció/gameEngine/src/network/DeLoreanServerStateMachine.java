@@ -134,13 +134,13 @@ public class DeLoreanServerStateMachine extends Network {
 				
 				clientcar.kinematics.renderPreProcess();
 		        
-				clientcar.sound.SetCarParameters(clientcar.kinematics.velocity/7, clientcar.kinematics.position, new Vector3f(0, 0, -10));
+				clientcar.sound.SetCarParameters(clientcar.kinematics.velocity/7+3, clientcar.kinematics.position, camera.getPosition());
 		        
 				clientcar.MoveCarSelf();
 		        
 				clientcar.kinematics.calculateFromLocation();
 				
-
+				servercar.moveChallenger(camera.getPosition());
 
 			} finally {
 				mutex.release();

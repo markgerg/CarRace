@@ -58,7 +58,7 @@ public class Challenger {
     	TexturedModel car_glass = new TexturedModel(car_glass_raw, new ModelTexture(loader.loadTexture("glass")));
     	ModelTexture texture_glass = car_glass.getTexture();
     	texture_glass.setShineDamper(10);
-    	texture_glass.setReflectivity(1);
+    	texture_glass.setReflectivity(3);
     	
     	RawModel car_tire_left_head_raw = OBJLoader.loadOBJModel("car_tire",	 loader);
     	TexturedModel car_tire_left_head = new TexturedModel(car_tire_left_head_raw, new ModelTexture(loader.loadTexture("glass")));
@@ -192,6 +192,11 @@ public class Challenger {
 		{
 			renderer.render(eChallenger[i], shader);
 		}
+	}
+	
+	public void delete()
+	{
+		sound.deleteAudioCar();
 	}
 	
 }
