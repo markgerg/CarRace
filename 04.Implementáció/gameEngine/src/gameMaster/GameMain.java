@@ -30,11 +30,19 @@ import shaders.StaticShader;
 import textures.ModelTexture;
 import track.Circuit1;
 
+
+/**
+ * @author markovitsgergo
+ *
+ */
 public class GameMain {
 
 	public static boolean gameRunning;
 	public static e8State state;
 	
+	/**
+	 * Egyjátékos üzemmód
+	 */
 	private static void SinglePlayer()
 	{
 		DisplayManager.createDisplay(60);
@@ -86,6 +94,11 @@ public class GameMain {
 		DisplayManager.deleteDisplay();
 	}
 	
+	/**
+	 * @param socketType
+	 * @param ip
+	 * Többjátékos üzemmód üzemmód
+	 */
 	private static void MultiPlayer(e8SocketType socketType, String ip)
 	{
 		
@@ -184,6 +197,11 @@ public class GameMain {
 		}
 	}
 	
+	/**
+	 * @param args
+	 * @throws InterruptedException
+	 * Belépési pont
+	 */
 	public static void main(String[] args) throws InterruptedException {
 		// A játékot mindig a menüvel kezdjük
 		state = e8State.MENU;
