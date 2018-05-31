@@ -1,0 +1,27 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl DB2X2_L02
+Ns 78.431373
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.250000 0.250000 0.250000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 9
+map_Bump -bm 0.350042 /Users/markovitsgergo/Downloads/Tree/Tree.fbm/DB2X2_L01_Nor.png
+map_Kd /Users/markovitsgergo/Downloads/Tree/Tree.fbm/DB2X2_L01.png
+map_Ks /Users/markovitsgergo/Downloads/Tree/Tree.fbm/DB2X2_L01_Spec.png
+map_d /Users/markovitsgergo/Downloads/Tree/Tree.fbm/DB2X2_L01.png
+
+newmtl Trank_bark1
+Ns 178.431373
+Ka 0.500000 0.500000 0.500000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 3
+map_Kd /Users/markovitsgergo/Downloads/Tree/bark_0021.jpg

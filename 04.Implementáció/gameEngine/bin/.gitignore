@@ -3,3 +3,8 @@
 /gameMaster/
 /network/
 /audio/
+/renderEngine/
+/shaders/
+/fragmentShader.txt
+/vertexShader.txt
+/res/
